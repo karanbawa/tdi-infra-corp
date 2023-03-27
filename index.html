@@ -48,12 +48,6 @@
     />
     <link
       rel="stylesheet"
-      id="emaar-style-css"
-      href="https://cdn.emaar.com/wp-content/themes/twentytwenty-child/assets/css/style.css?ver=1668067675"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
       id="emaar-slick-style-css"
       href="https://cdn.emaar.com/wp-content/themes/twentytwenty-child/assets/slick/slick.css?ver=6.0.2"
       media="all"
@@ -927,9 +921,8 @@
             <div class="col-3 col-sm-3 col-lg-2 col-md-2 navbar-brand">
               <a href="">
                 <img
-                  src="./tdilogo.png"
-                  alt="Emaar Properties PJSC"
-                  title="Emaar Properties PJSC"
+                  src="http://www.tdiinfracorp.com/manage/uploads/logo.png"
+                  alt="TDI Infracorp (India) Ltd."
                   width="100"
                   height="20"
                 />
@@ -1340,8 +1333,9 @@
           $(".header_call").click(function () {
             amplitude.getInstance().logEvent("call_us");
           });
-          window.templateUrl = "https://res.cloudinary.com/dkcvnvxnp/image/upload/v1678004301/tdilogo_trwr9d.png"
-            // "https://www.emaar.com/wp-content/themes/twentytwenty-child";
+          window.templateUrl =
+            "http://www.tdiinfracorp.com/manage/uploads/logo.png";
+          // "https://www.emaar.com/wp-content/themes/twentytwenty-child";
           window.rtl_slick_var = $("body").hasClass("rtl");
           var device = "desktop";
           var device_tablet = 0;
@@ -2138,530 +2132,6 @@
                 <!-- End  Modals for Mobile Search Component -->
               </form>
             </div>
-            <div class="prop-search-bar">
-              <div class="container d-none d-lg-block home-search-component">
-                <form
-                  name="prop_search_form"
-                  id="prop_search_form"
-                  method="get"
-                  action="https://properties.emaar.com/en/property-search/"
-                >
-                  <div class="row form-group">
-                    <div class="col-12 col-md-12 col-lg-12 form-container">
-                      <div class="row" id="homepage-search-filter">
-                        <!-- Property type selection -->
-                        <div
-                          class="col-12 col-md-3 select-sec property-type-selection p-0"
-                        >
-                          <label class="search-fld" for="type">
-                            <span class="search-label">Property Type</span>
-                            <span class="search-val"> Any </span>
-                            <i
-                              class="fas fa-angle-down dropdown-icon"
-                              aria-hidden="true"
-                            ></i>
-                          </label>
-                          <div
-                            class="property-type-options select-sec-options"
-                            style="display: none"
-                          >
-                            <div class="row">
-                              <div class="col-12 col-sm-6">
-                                <ul>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="ptype1"
-                                      name="p-type[]"
-                                      value="Apartment"
-                                    />
-                                    <label for="ptype1">Apartment</label><br />
-                                  </li>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="ptype2"
-                                      name="p-type[]"
-                                      value="Hotel"
-                                    />
-                                    <label for="ptype2">Hotel</label><br />
-                                  </li>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="ptype3"
-                                      name="p-type[]"
-                                      value="Office"
-                                    />
-                                    <label for="ptype3">Office</label><br />
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-12 col-sm-6">
-                                <ul>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="ptype4"
-                                      name="p-type[]"
-                                      value="Plot"
-                                    />
-                                    <label for="ptype4">Plot</label><br />
-                                  </li>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="ptype5"
-                                      name="p-type[]"
-                                      value="Townhouse"
-                                    />
-                                    <label for="ptype5">Townhouse</label><br />
-                                  </li>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="ptype6"
-                                      name="p-type[]"
-                                      value=" Villa"
-                                    />
-                                    <label for="ptype6"> Villa</label><br />
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="row filter-bottom">
-                              <div
-                                class="col-6 d-flex justify-content-start align-items-center pr-0"
-                              >
-                                <a
-                                  href="javascript:void(0);"
-                                  class="clear-selection"
-                                  id="clear-property"
-                                  >Clear Selection</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End Property type selection -->
-
-                        <!-- Start Bedrooms selection -->
-
-                        <div
-                          class="col-12 col-md-3 select-sec bedroom-selection p-0"
-                        >
-                          <div id="bedroom-selection-wrapper">
-                            <label class="search-fld" for="bedrooms">
-                              <span class="search-label">Bedroom</span>
-                              <span class="search-val">Any</span>
-                              <i
-                                class="fas fa-angle-down dropdown-icon"
-                                aria-hidden="true"
-                              ></i>
-                            </label>
-                          </div>
-                          <div
-                            class="bedroom-options select-sec-options"
-                            style="display: none"
-                          >
-                            <div class="row">
-                              <div class="col-12 col-sm-6">
-                                <ul>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="bed1"
-                                      name="bed[]"
-                                      value="1 Bedroom"
-                                    />
-                                    <label for="bed1">1 Bedroom</label><br />
-                                  </li>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="bed2"
-                                      name="bed[]"
-                                      value="2 Bedrooms"
-                                    />
-                                    <label for="bed2">2 Bedrooms</label><br />
-                                  </li>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="bed3"
-                                      name="bed[]"
-                                      value="3 Bedrooms"
-                                    />
-                                    <label for="bed3">3 Bedrooms</label><br />
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="col-12 col-sm-6">
-                                <ul>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="bed4"
-                                      name="bed[]"
-                                      value="4 Bedrooms"
-                                    />
-                                    <label for="bed4">4 Bedrooms</label><br />
-                                  </li>
-                                  <li>
-                                    <input
-                                      type="checkbox"
-                                      id="bed5"
-                                      name="bed[]"
-                                      value="5+ Bedrooms"
-                                    />
-                                    <label for="bed5">5+ Bedrooms</label><br />
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="row filter-bottom">
-                              <div
-                                class="col-6 d-flex justify-content-start align-items-center"
-                              >
-                                <a
-                                  href="javascript:void(0);"
-                                  class="clear-selection"
-                                  id="clear-bedrooms"
-                                  >Clear Selection</a
-                                >
-                              </div>
-                              <div
-                                class="col-6 d-flex justify-content-end"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Start Price Range Selection -->
-                        <div
-                          class="col-12 col-md-3 select-sec price-range-selection p-0"
-                        >
-                          <div id="price-range-selection-wrapper">
-                            <label class="search-fld" for="price-range">
-                              <span class="search-label">Price Range</span>
-                              <span class="search-val">Any</span>
-                              <i
-                                class="fas fa-angle-down dropdown-icon dropdown-icon-price"
-                                aria-hidden="true"
-                              ></i>
-                            </label>
-                          </div>
-                          <div
-                            class="price-options select-sec-options"
-                            style="display: none"
-                          >
-                            <div class="price-min-range d-inline-block">
-                              <label for="min-price"
-                                ><span class="search-label"
-                                  >Min Price (AED)</span
-                                ></label
-                              >
-                              <select name="min-price">
-                                <option value="0" selected="">0</option>
-                                <option value="100000">100,000</option>
-                                <option value="200000">200,000</option>
-                                <option value="300000">300,000</option>
-                                <option value="400000">400,000</option>
-                                <option value="500000">500,000</option>
-                                <option value="600000">600,000</option>
-                                <option value="700000">700,000</option>
-                                <option value="800000">800,000</option>
-                                <option value="900000">900,000</option>
-                                <option value="1000000">1,000,000</option>
-                                <option value="1200000">1,200,000</option>
-                                <option value="1400000">1,400,000</option>
-                                <option value="1600000">1,600,000</option>
-                                <option value="1800000">1,800,000</option>
-                                <option value="2000000">2,000,000</option>
-                                <option value="2200000">2,200,000</option>
-                                <option value="2400000">2,400,000</option>
-                                <option value="2600000">2,600,000</option>
-                                <option value="2800000">2,800,000</option>
-                                <option value="3000000">3,000,000</option>
-                                <option value="3500000">3,500,000</option>
-                                <option value="4000000">4,000,000</option>
-                                <option value="4500000">4,500,000</option>
-                                <option value="5000000">5,000,000</option>
-                                <option value="5500000">5,500,000</option>
-                                <option value="6000000">6,000,000</option>
-                                <option value="6500000">6,500,000</option>
-                                <option value="7000000">7,000,000</option>
-                                <option value="7500000">7,500,000</option>
-                                <option value="8000000">8,000,000</option>
-                                <option value="8500000">8,500,000</option>
-                                <option value="9000000">9,000,000</option>
-                                <option value="9500000">9,500,000</option>
-                                <option value="10000000">10,000,000</option>
-                                <option value="12000000">12,000,000</option>
-                                <option value="14000000">14,000,000</option>
-                                <option value="16000000">16,000,000</option>
-                                <option value="18000000">18,000,000</option>
-                                <option value="20000000">20,000,000</option>
-                                <option value="30000000">30,000,000</option>
-                                <option value="40000000">40,000,000</option>
-                                <option value="50000000">50,000,000</option>
-                                <option value="60000000">60,000,000</option>
-                                <option value="70000000">70,000,000</option>
-                                <option value="80000000">80,000,000</option>
-                                <option value="90000000">90,000,000</option>
-                                <option value="100000000">100,000,000</option>
-                              </select>
-                            </div>
-                            <span class="d-inline-block ml-3 mr-3">To</span>
-                            <div class="price-max-range d-inline-block">
-                              <label for="max-price"
-                                ><span class="search-label"
-                                  >Max Price (AED)</span
-                                ></label
-                              >
-                              <select name="max-price">
-                                <option value="0">0</option>
-                                <option value="100000">100,000</option>
-                                <option value="200000">200,000</option>
-                                <option value="300000">300,000</option>
-                                <option value="400000">400,000</option>
-                                <option value="500000">500,000</option>
-                                <option value="600000">600,000</option>
-                                <option value="700000">700,000</option>
-                                <option value="800000">800,000</option>
-                                <option value="900000">900,000</option>
-                                <option value="1000000">1,000,000</option>
-                                <option value="1200000">1,200,000</option>
-                                <option value="1400000">1,400,000</option>
-                                <option value="1600000">1,600,000</option>
-                                <option value="1800000">1,800,000</option>
-                                <option value="2000000">2,000,000</option>
-                                <option value="2200000">2,200,000</option>
-                                <option value="2400000">2,400,000</option>
-                                <option value="2600000">2,600,000</option>
-                                <option value="2800000">2,800,000</option>
-                                <option value="3000000">3,000,000</option>
-                                <option value="3500000">3,500,000</option>
-                                <option value="4000000">4,000,000</option>
-                                <option value="4500000">4,500,000</option>
-                                <option value="5000000">5,000,000</option>
-                                <option value="5500000">5,500,000</option>
-                                <option value="6000000">6,000,000</option>
-                                <option value="6500000">6,500,000</option>
-                                <option value="7000000">7,000,000</option>
-                                <option value="7500000">7,500,000</option>
-                                <option value="8000000">8,000,000</option>
-                                <option value="8500000">8,500,000</option>
-                                <option value="9000000">9,000,000</option>
-                                <option value="9500000">9,500,000</option>
-                                <option value="10000000">10,000,000</option>
-                                <option value="12000000">12,000,000</option>
-                                <option value="14000000">14,000,000</option>
-                                <option value="16000000">16,000,000</option>
-                                <option value="18000000">18,000,000</option>
-                                <option value="20000000">20,000,000</option>
-                                <option value="30000000">30,000,000</option>
-                                <option value="40000000">40,000,000</option>
-                                <option value="50000000">50,000,000</option>
-                                <option value="60000000">60,000,000</option>
-                                <option value="70000000">70,000,000</option>
-                                <option value="80000000">80,000,000</option>
-                                <option value="90000000">90,000,000</option>
-                                <option value="100000000" selected="">
-                                  100,000,000
-                                </option>
-                              </select>
-                            </div>
-                            <div class="row filter-bottom">
-                              <div
-                                class="col-6 d-flex justify-content-start align-items-center"
-                              >
-                                <a
-                                  href="javascript:void(0);"
-                                  class="clear-selection"
-                                  id="clear-price"
-                                  >Clear Selection</a
-                                >
-                              </div>
-                              <div
-                                class="col-6 d-flex justify-content-end"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Start Community -->
-                        <div
-                          class="col-12 col-md-3 select-sec community-selection p-0"
-                        >
-                          <div id="community-selection-wrapper">
-                            <label class="search-fld" for="community">
-                              <span class="search-label">Communities</span>
-                              <span class="search-val">All Communities</span>
-                              <i
-                                class="fas fa-angle-down dropdown-icon"
-                                aria-hidden="true"
-                              ></i>
-                            </label>
-                          </div>
-                        </div>
-                        <div
-                          class="community-options select-sec-options community-options-desktop"
-                          style="display: none"
-                        >
-                          <div class="row">
-                            <div
-                              class="col-12 col-lg-3 col-md-4 border-0 primary-communitylist-container"
-                            >
-                              <h4 class="featured-community-title">
-                                Featured Community
-                              </h4>
-                              <p class="no-community-for-property">
-                                We currently have no properties matching your
-                                search
-                              </p>
-                              <ul class="primary-community-list desktop">
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm0"
-                                    name="comm[]"
-                                    value="Dubai Marina"
-                                  />
-                                  <label for="comm0">Dubai Marina</label><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm1"
-                                    name="comm[]"
-                                    value="Dubai Hills Estates"
-                                  />
-                                  <label for="comm1">Dubai Hills Estate</label
-                                  ><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm2"
-                                    name="comm[]"
-                                    value="Dubai Creek Harbour"
-                                  />
-                                  <label for="comm2">Dubai Creek Harbour</label
-                                  ><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm3"
-                                    name="comm[]"
-                                    value="Ranches III"
-                                  />
-                                  <label for="comm3">Arabian Ranches III</label
-                                  ><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm4"
-                                    name="comm[]"
-                                    value="The Valley"
-                                  />
-                                  <label for="comm4">The Valley</label><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm5"
-                                    name="comm[]"
-                                    value="Downtown Dubai"
-                                  />
-                                  <label for="comm5">Downtown Dubai</label
-                                  ><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm6"
-                                    name="comm[]"
-                                    value="Emaar South"
-                                  />
-                                  <label for="comm6">Emaar South</label><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm7"
-                                    name="comm[]"
-                                    value="Emaar Beachfront"
-                                  />
-                                  <label for="comm7">Emaar Beachfront</label
-                                  ><br />
-                                </li>
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm8"
-                                    name="comm[]"
-                                    value="Mina Rashid"
-                                  />
-                                  <label for="comm8"
-                                    >RASHID YACHTS &amp; MARINA</label
-                                  ><br />
-                                </li>
-                              </ul>
-                            </div>
-                            <div class="col-12 col-lg-9 col-md-8">
-                              <h4 class="more-community-title">
-                                More Communities
-                              </h4>
-                              <ul
-                                class="community-options-list more-community-list"
-                              >
-                                <li>
-                                  <input
-                                    type="checkbox"
-                                    id="comm9"
-                                    name="comm[]"
-                                    value="Arabian Ranches"
-                                  />
-                                  <label for="comm9">Arabian Ranches</label
-                                  ><br />
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="row filter-bottom">
-                            <div
-                              class="col-6 d-flex justify-content-start align-items-center"
-                            >
-                              <a
-                                href="javascript:void(0);"
-                                class="clear-selection"
-                                id="clear-community"
-                                >Clear Selection</a
-                              >
-                            </div>
-                            <div class="col-6 d-flex justify-content-end"></div>
-                          </div>
-                        </div>
-                        <!-- End Community -->
-
-                        <div
-                          class="col-12 col-md-3 d-flex align-items-center container-search-property"
-                        >
-                          <input
-                            type="submit"
-                            name="submit"
-                            value="Search Properties"
-                            class="btn btn-grey w-100"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -2895,15 +2365,15 @@
                           href="https://properties.emaar.com/en/properties/the-farm-gardens/"
                           ><img
                             class="d-none d-md-block lazyload"
-                            data-src="https://cdn.properties.emaar.com/wp-content/uploads/2022/12/01_HERO_FARM-GARDENS_THE_VALLEY_WEBSITE-440x570.jpg"
+                            data-src="https://www.tdiinfracorp.com/images/slider/1.jpg"
                             alt="THE FARM GARDENS-The Valley"
                             title="THE FARM GARDENS-The Valley"
                             width="440"
                             height="570"
-                            src="https://cdn.properties.emaar.com/wp-content/uploads/2022/12/01_HERO_FARM-GARDENS_THE_VALLEY_WEBSITE-440x570.jpg" />
+                            src="https://www.tdiinfracorp.com/images/slider/1.jpg" />
                           <img
                             class="d-block d-md-none lazyload"
-                            data-src="https://cdn.properties.emaar.com/wp-content/uploads/2022/12/01_HERO_FARM-GARDENS_THE_VALLEY_WEBSITE-706x385.jpg"
+                            data-src="https://www.tdiinfracorp.com/images/slider/1.jpg"
                             alt="THE FARM GARDENS-The Valley"
                             title="THE FARM GARDENS-The Valley"
                             width="706"
@@ -2925,12 +2395,12 @@
                           href="https://properties.emaar.com/en/properties/park-horizon/"
                           ><img
                             class="lazyload"
-                            data-src="https://cdn.properties.emaar.com/wp-content/uploads/2022/11/HERO_IMG-706x385.jpg"
+                            data-src="	https://www.tdiinfracorp.com/images/slider/2.jpg"
                             alt="PARK HORIZON-Dubai Hills Estate"
                             title="PARK HORIZON-Dubai Hills Estate"
                             width="706"
                             height="385"
-                            src="https://cdn.properties.emaar.com/wp-content/uploads/2022/11/HERO_IMG-706x385.jpg"
+                            src="	https://www.tdiinfracorp.com/images/slider/2.jpg"
                         /></a>
                       </div>
                       <section>
@@ -2951,12 +2421,12 @@
                         >
                           <img
                             class="lazyload"
-                            data-src="https://cdn.properties.emaar.com/wp-content/uploads/2022/10/THE_RESIDENCE_BK_WEBSITE_HERO-2-706x385.jpg"
+                            data-src="	https://www.tdiinfracorp.com/images/slider/3.jpg"
                             alt="THE RESIDENCE | BURJ KHALIFA-Downtown Dubai"
                             title="THE RESIDENCE | BURJ KHALIFA-Downtown Dubai"
                             width="706"
                             height="385"
-                            src="https://cdn.properties.emaar.com/wp-content/uploads/2022/10/THE_RESIDENCE_BK_WEBSITE_HERO-2-706x385.jpg"
+                            src="	https://www.tdiinfracorp.com/images/slider/3.jpg"
                           />
                         </a>
                       </div>
@@ -2976,12 +2446,12 @@
                         >
                           <img
                             class="lazyload"
-                            data-src="https://cdn.properties.emaar.com/wp-content/uploads/2020/09/THE_COVE_DCH_WEBSITE_HERO-706x385.jpg"
+                            data-src="	https://www.tdiinfracorp.com/images/slider/4.jpg"
                             alt="The Cove-Dubai Creek Harbour"
                             title="The Cove-Dubai Creek Harbour"
                             width="706"
                             height="385"
-                            src="https://cdn.properties.emaar.com/wp-content/uploads/2020/09/THE_COVE_DCH_WEBSITE_HERO-706x385.jpg"
+                            src="	https://www.tdiinfracorp.com/images/slider/4.jpg"
                           />
                         </a>
                       </div>
@@ -2994,7 +2464,7 @@
                         <span class="comm-name">Dubai Creek Harbour</span>
                       </section>
                     </div>
-                    <div class="prop-block scroll-animate">
+                    <!-- <div class="prop-block scroll-animate">
                       <div class="view overlay zoom">
                         <a
                           href="https://properties.emaar.com/en/properties/raya/"
@@ -3018,7 +2488,7 @@
                         >
                         <span class="comm-name">Arabian Ranches III</span>
                       </section>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -3073,12 +2543,12 @@
                         >
                           <img
                             class="lazyload"
-                            data-src="https://cdn.emaar.com/wp-content/uploads/2021/08/DUBAI_MARINA_COMMUNITY-320x415.jpg"
+                            data-src="http://www.tdiinfracorp.com/images/featured/3.jpg"
                             alt=""
                             title="DUBAI_MARINA_COMMUNITY"
                             width="440"
                             height="615"
-                            src="https://cdn.emaar.com/wp-content/uploads/2021/08/DUBAI_MARINA_COMMUNITY-320x415.jpg"
+                            src="http://www.tdiinfracorp.com/images/featured/3.jpg"
                           />
                         </a>
                       </div>
@@ -3108,12 +2578,12 @@
                         >
                           <img
                             class="lazyload"
-                            data-src="https://cdn.emaar.com/wp-content/uploads/2021/08/DHE_COMMUNITY_HERO-resize-scaled-1-320x415.jpeg"
+                            data-src="http://www.tdiinfracorp.com/images/featured/1.jpg"
                             alt=""
                             title="DHE_COMMUNITY_HERO-resize-scaled"
                             width="440"
                             height="615"
-                            src="https://cdn.emaar.com/wp-content/uploads/2021/08/DHE_COMMUNITY_HERO-resize-scaled-1-320x415.jpeg"
+                            src="http://www.tdiinfracorp.com/images/featured/1.jpg"
                           />
                         </a>
                       </div>
@@ -3143,12 +2613,12 @@
                         >
                           <img
                             class="lazyload"
-                            data-src="https://cdn.emaar.com/wp-content/uploads/2021/08/DUBAI_CREEK_HARBOUR_HERO-320x415.jpg"
+                            data-src="http://www.tdiinfracorp.com/images/featured/2.jpg"
                             alt=""
                             title="DUBAI_CREEK_HARBOUR_HERO"
                             width="440"
                             height="615"
-                            src="https://cdn.emaar.com/wp-content/uploads/2021/08/DUBAI_CREEK_HARBOUR_HERO-320x415.jpg"
+                            src="http://www.tdiinfracorp.com/images/featured/2.jpg"
                           />
                         </a>
                       </div>
@@ -3400,8 +2870,11 @@
               <div class="col-12 col-md-10 offset-md-1">
                 <div class="row">
                   <div class="col-12 col-md-6 digital-exp">
-                    <span class="section-tagline">A DIGITAL EXPERIENCE </span>
-                    <h2>Manage your property 24/7, with the Emaar One app</h2>
+                    <span class="section-tagline">Our Awards </span>
+                    <h2>
+                      TDI has been doing exception work since years and received
+                      various awards and honors
+                    </h2>
 
                     <p>
                       Emaar One allows home owners and tenants to fully manage

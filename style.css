@@ -204,7 +204,6 @@ span.green-submit:hover:before {
 }
 .jumbotron {
   background-color: inherit;
-  padding: 80px 0;
   margin: 0;
 }
 .grey-bg {
@@ -630,7 +629,6 @@ p.booking-confirmation {
 }
 .site .gform_wrapper ul.gform_fields li.gfield.phone-number {
   width: 66.66%;
-  float: right;
   clear: inherit;
 }
 .site .gform_wrapper ul.gform_fields li.gfield.booking-email-address {
@@ -665,7 +663,7 @@ body
 }
 .site .gform_wrapper ul.gform_fields li.gfield.booking-phone-number {
   width: 35%;
-  float: right;
+
   clear: inherit;
   margin-top: 41px;
 }

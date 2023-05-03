@@ -6,22 +6,16 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <script
-      type="text/javascript"
-      src="https://bam.eu01.nr-data.net/1/NRJS-23b945b24f09db434b3?a=268817795&amp;v=1220.PROD&amp;to=MhBSZQoZXBBUUhZfVwtacVIMEV0NGlcQWVYRWEBQHx0%3D&amp;rst=10168&amp;ck=0&amp;s=fb6b4409cb654e98&amp;ref=https://www.emaar.com/&amp;ap=197&amp;be=2120&amp;fe=7250&amp;dc=1428&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1672930128616,%22n%22:0,%22f%22:8,%22dn%22:8,%22dne%22:8,%22c%22:8,%22ce%22:8,%22rq%22:21,%22rp%22:2016,%22rpe%22:2617,%22dl%22:2024,%22di%22:3531,%22ds%22:3531,%22de%22:3552,%22dc%22:9370,%22l%22:9370,%22le%22:9434%7D,%22navigation%22:%7B%7D%7D&amp;fp=3329&amp;fcp=3329&amp;at=HldRE0IDTx4%3D&amp;jsonp=NREUM.setToken"
-    ></script>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link
       rel="icon"
-      href="https://cdn.emaar.com/wp-content/themes/twentytwenty-child/assets/images/favicon.ico"
+      href="./assets/tdi-about.jpeg"
       type="image/x-icon"
     />
     <meta
       name="robots"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
-
-    <!-- This site is optimized with the Yoast SEO plugin v19.8 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>Home - TDI Properties</title>
     <link rel="canonical" href="https://www.emaar.com/" />
     <meta property="og:locale" content="en_US" />
@@ -34,12 +28,6 @@
       content="2022-03-11T13:54:48+00:00"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <link
-      rel="stylesheet"
-      id="wp-block-library-css"
-      href="https://cdn.emaar.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2"
-      media="all"
-    />
     <link
       rel="stylesheet"
       id="emaar-ext-style-css"
@@ -82,7 +70,8 @@
       src="https://cdn.emaar.com/wp-content/themes/twentytwenty-child/inc/assets/js/ext.min.js?ver=6.0.2"
       id="emaar-ext-script-js"
     ></script>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style1.css" /> 
+    <link rel="stylesheet" href="./componenttest.css" />
     <script
       type="text/javascript"
       async=""
@@ -897,804 +886,21 @@
           };
 
           var lastScrollTop = 0;
-          $(window).scroll(function () {
-            var st = $(this).scrollTop();
-            if ($(".cookie-disclaimer").is(":visible")) {
-              if (
-                st < lastScrollTop &&
-                st > 0 &&
-                !$(".cookie-disclaimer").isInViewport()
-              ) {
-                if (st > 200) {
-                  $("#masthead").addClass("stickyHeader");
-                  $("#masthead").css("top", "0");
-                  enARLogo();
-                }
-              } else {
-                if (
-                  st != 0 &&
-                  st > 200 &&
-                  !$(".cookie-disclaimer").isInViewport()
-                ) {
-                  $("#masthead").css("top", "-72px");
-                  enARLogo();
-                } else {
-                  $("#masthead").css("top", "0px");
-                  $("#masthead").removeClass("stickyHeader");
-                }
-                if ($("body").hasClass("home")) {
-                  setTimeout(enARLogoV2, 100);
-                } else {
-                  setTimeout(enARLogo, 250);
-                }
-              }
-            } else {
-              if (st < lastScrollTop && st > 0) {
-                if (st > 100) {
-                  $("#masthead").addClass("stickyHeader");
-                  $("#masthead").css("top", "0px");
-                  enARLogo();
-                }
-              } else {
-                if (st != 0 && st > 100) {
-                  $("#masthead").css("top", "-72px");
-                } else {
-                  $("#masthead").css("top", "0px");
-                  $("#masthead").removeClass("stickyHeader");
-                }
-                if ($("body").hasClass("home")) {
-                  setTimeout(enARLogoV2, 100);
-                } else {
-                  setTimeout(enARLogo, 250);
-                }
-              }
-            }
-
-            lastScrollTop = st;
-
-            if (
-              device != "desktop" ||
-              device_tablet ||
-              window.innerWidth < 991
-            ) {
-              if (st > 100) {
-                $(".homepage-sticky-search").removeClass("noBg");
-              } else {
-                $(".homepage-sticky-search").addClass("noBg");
-              }
-            }
-          });
-
-          /* Sticky Header on scroll up feature */
-          $("#main-nav .navbar-nav li:first-child a.nav-link").on(
-            "click",
-            function () {
-              if ($(".cookie-disclaimer").is(":visible")) {
-                $("#communities_menu").css(
-                  "top",
-                  $(".cookie-disclaimer").innerHeight() +
-                    $("#masthead").innerHeight()
-                );
-              } else {
-                $("#communities_menu").css("top", $("#masthead").innerHeight());
-              }
-            }
-          );
         </script>
         <div class="home-hero-section loading-normal-page">
           <div class="hero-content-wrapper">
-            <div class="hero-background-overlay"></div>
-            <div class="landing-banner spaces2-banner">
-              <div class="banner-image home-landing-banner">
-                <div class="container">
-                  <div
-                    class="swiper-phone-hide swiper-container swiper landing-collection spaces2-text-slider swiper-container-horizontal"
-                    style="background-color: transparent !important"
-                  >
-                    <div
-                      class="swiper-wrapper"
-                      style="
-                        transition-duration: 0ms;
-                        transform: translate3d(0px, 0px, 0px);
-                      "
-                    >
-                      <!-- Event Banner -->
-                      <!-- Banner GVT 1 -->
-                      <!-- Banner GVT 2 -->
-                      <!-- Banner 1 -->
-                      <div
-                        class="swiper-slide swiper-slide-active"
-                        style="
-                          width: 450px;
-                          background-color: rgba(255, 255, 255, 0.7);
-                        "
-                      >
-                        <div class="collection-wrapper">
-                          <h1
-                            style="
-                              margin: 20px 0px;
-                              font-weight: 100;
-                              font-size: 24px;
-                              line-height: 30px;
-                            "
-                          >
-                            <strong>Exports</strong> in more than 10+ countries
-                          </h1>
-                          <a
-                            class="btn collection-btn"
-                            href="./aboutus"
-                            class="btn collection-btn"
-                            style="font-size: 14px"
-                            >Explore</a
-                          >
-                        </div>
-                      </div>
-                      <!-- Banner 2 -->
-                      <div
-                        class="swiper-slide swiper-slide-next"
-                        style="
-                          width: 450px;
-                          background-color: rgba(255, 255, 255, 0.7);
-                        "
-                      >
-                        <div class="collection-wrapper">
-                          <h2
-                            style="
-                              margin: 20px 0px;
-                              font-weight: 100;
-                              font-size: 24px;
-                              line-height: 30px;
-                            "
-                          >
-                            Nature designed, Zebboi perfected!<br /><strong
-                              >Marble</strong
-                            >
-                            like no other!
-                          </h2>
-                          <a
-                            class="btn collection-btn"
-                            href="./tiles-collection"
-                            class="btn collection-btn"
-                            style="font-size: 14px"
-                            onclick="dataLayer.push({'event' : 'event dl banner click','eventCategory' : 'homepage','eventAction' : 'banner click - first fold','eventLabel' : 'marble'});"
-                            >view more</a
-                          >
-                        </div>
-                      </div>
-                      <!-- Banner 3 -->
-                      <div
-                        class="swiper-slide"
-                        style="
-                          width: 450px;
-                          margin-top: 25px;
-                          background-color: rgba(255, 255, 255, 0.7);
-                        "
-                      >
-                        <div class="collection-wrapper">
-                          <h2
-                            style="
-                              margin: 20px 0px;
-                              font-weight: 100;
-                              font-size: 24px;
-                              line-height: 30px;
-                            "
-                          >
-                            A thing of beauty is a joy forever. Explore Zebboi
-                            <strong>Mosaic</strong> now!
-                          </h2>
-                          <a
-                            class="btn collection-btn"
-                            href="./tiles-collection"
-                            class="btn collection-btn"
-                            style="font-size: 14px"
-                            onclick="dataLayer.push({'event' : 'event dl banner click','eventCategory' : 'homepage','eventAction' : 'banner click - first fold','eventLabel' : 'mosaic'});"
-                            >view more</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="swiper-container swiper spaces2imageslider spaces2-image-slider swiper-container-horizontal"
-                >
-                  <div
-                    class="swiper-wrapper"
-                    style="
-                      transition-duration: 0ms;
-                      transform: translate3d(0px, 0px, 0px);
-                    "
-                  >
-                    <div
-                      class="swiper-slide swiper-slide-active"
-                      style="width: 1349px"
-                    >
-                      <a class="linkColorChange" href="./tiles-collection"
-                        ><img
-                          class="hero-image-height-phone"
-                          src="./home-hero-3.png"
-                          alt="Tiles Banner"
-                      /></a>
-                    </div>
-                    <div
-                      class="swiper-slide swiper-slide-next"
-                      style="width: 1349px"
-                    >
-                      <a class="linkColorChange" href="./tiles-collection"
-                        ><img
-                          class="hero-image-height-phone"
-                          src="./home-hero-2.png"
-                          alt="Marble Banner"
-                      /></a>
-                    </div>
-                    <div class="swiper-slide" style="width: 1349px">
-                      <a class="linkColorChange" href="./tiles-collection"
-                        ><img
-                          class="hero-image-height-phone"
-                          src="./home-hero-1.png"
-                          alt="Mosaic Banner"
-                      /></a>
-                    </div>
-                  </div>
-                </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
               </div>
-            </div>
-
-            <!--  -- Search Component for Mobile -->
-            <div class="homesearch_mobile_filter d-lg-none">
-              <form
-                name="prop_search_mobile_form"
-                id="prop_search_mobile_form"
-                action="https://properties.emaar.com/en/property-search/"
-              >
-                <!--  Modals for Mobile Search Component -->
-                <div class="prop-search-mobile-form">
-                  <div
-                    class="modal fade"
-                    id="prop-search-mobileform-modal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-hidden="true"
-                    data-backdrop="false"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <i class="fal fa-times" aria-hidden="true"></i>
-                        </button>
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="select-sec" id="property-for-mobile">
-                              <label
-                                class="search-fld"
-                                for="type"
-                                data-toggle="modal"
-                                data-target="#propertyTypeModal"
-                              >
-                                <span class="search-label">Property Type</span>
-                                <span class="search-val">Any</span>
-                                <i
-                                  class="fas dropdown-icon fa-angle-down"
-                                  aria-hidden="true"
-                                ></i>
-                              </label>
-                            </div>
-                            <div class="select-sec" id="bedroom-for-mobile">
-                              <label
-                                class="search-fld"
-                                for="bedrooms"
-                                data-toggle="modal"
-                                data-target="#bedroomsModal"
-                              >
-                                <span class="search-label">Bedroom</span>
-                                <span class="search-val">Any</span>
-                                <i
-                                  class="fas dropdown-icon fa-angle-down"
-                                  aria-hidden="true"
-                                ></i>
-                              </label>
-                            </div>
-                            <div class="select-sec" id="price-for-mobile">
-                              <label
-                                class="search-fld"
-                                for="price-range"
-                                data-toggle="modal"
-                                data-target="#priceModal"
-                              >
-                                <span class="search-label">Price Range</span>
-                                <span class="search-val">Any</span>
-                                <i
-                                  class="fas dropdown-icon fa-angle-down"
-                                  aria-hidden="true"
-                                ></i>
-                              </label>
-                            </div>
-                            <div class="select-sec" id="community-for-mobile">
-                              <label
-                                class="search-fld"
-                                for="community"
-                                data-toggle="modal"
-                                data-target="#communityModal"
-                              >
-                                <span class="search-label">Communities</span>
-                                <span class="search-val">All Communities</span>
-                                <i
-                                  class="fas dropdown-icon fa-angle-down"
-                                  aria-hidden="true"
-                                ></i>
-                              </label>
-                            </div>
-                            <div class="select-sec" id="community-for-mobile">
-                              <div class="search-fld container-search-property">
-                                <input
-                                  type="submit"
-                                  name="submit"
-                                  value="Search Properties"
-                                  class="btn btn-grey w-100"
-                                  id="searchMobileSubmit"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="propertyTypeModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="propertyTypeModalLabel"
-                    aria-hidden="true"
-                    data-backdrop="false"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content w-100">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <i class="fal fa-times" aria-hidden="true"></i>
-                        </button>
-                        <div class="modal-body">
-                          <div class="property-type-options select-sec-options">
-                            <h3>Property Type</h3>
-                            <ul class="mobile-type-checkbox">
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-ptype"
-                                  name="p-type[]"
-                                  value="Apartment"
-                                />
-                                <label for="mobile-ptype">Apartment</label
-                                ><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-ptype1"
-                                  name="p-type[]"
-                                  value="Hotel"
-                                />
-                                <label for="mobile-ptype1">Hotel</label><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-ptype2"
-                                  name="p-type[]"
-                                  value="Office"
-                                />
-                                <label for="mobile-ptype2">Office</label><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-ptype3"
-                                  name="p-type[]"
-                                  value="Plot"
-                                />
-                                <label for="mobile-ptype3">Plot</label><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-ptype4"
-                                  name="p-type[]"
-                                  value="Townhouse"
-                                />
-                                <label for="mobile-ptype4">Townhouse</label
-                                ><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-ptype5"
-                                  name="p-type[]"
-                                  value=" Villa"
-                                />
-                                <label for="mobile-ptype5"> Villa</label><br />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row filter-bottom">
-                          <div
-                            class="col-6 d-flex justify-content-start align-items-center pl-0"
-                          >
-                            <a
-                              href="javascript:void(0);"
-                              class="clear-selection"
-                              id="mobile-clear-property"
-                              >Clear Selection</a
-                            >
-                          </div>
-                          <div class="col-6 d-flex justify-content-end pr-0">
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-green apply-btn close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                              id="mobile-property-apply"
-                              >Apply</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="communityModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="communityModalLabel"
-                    aria-hidden="true"
-                    data-backdrop="false"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content w-100">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <i class="fal fa-times" aria-hidden="true"></i>
-                        </button>
-                        <div class="modal-body">
-                          <div
-                            class="community-options select-sec-options community-options-mobile"
-                          >
-                            <h3>Communities</h3>
-                            <h4 class="featured-community-title">
-                              Featured Community
-                            </h4>
-                            <p class="no-community-for-property">
-                              We currently have no properties matching your
-                              search
-                            </p>
-                            <ul
-                              class="primary-community-list mobile mobile-comm-checkbox"
-                            >
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-comm0"
-                                  name="comm[]"
-                                  value="Dubai Marina"
-                                />
-                                <label for="mobile-comm0">Dubai Marina</label
-                                ><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-comm1"
-                                  name="comm[]"
-                                  value="Dubai Hills Estates"
-                                />
-                                <label for="mobile-comm1"
-                                  >Dubai Hills Estate</label
-                                ><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-comm2"
-                                  name="comm[]"
-                                  value="Dubai Creek Harbour"
-                                />
-                                <label for="mobile-comm2"
-                                  >Dubai Creek Harbour</label
-                                ><br />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="priceModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="priceModalLabel"
-                    aria-hidden="true"
-                    data-backdrop="false"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content w-100">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <i class="fal fa-times" aria-hidden="true"></i>
-                        </button>
-                        <div class="modal-body">
-                          <div class="price-options select-sec-options">
-                            <h3>Price Range</h3>
-                            <div
-                              class="price-min-range min-price-mobile d-inline-block"
-                            >
-                              <label for="min-price"
-                                ><span class="search-label"
-                                  >Min Price (AED)</span
-                                ></label
-                              >
-                              <select name="min-price">
-                                <option value="0">0</option>
-                                <option value="100000">100,000</option>
-                                <option value="200000">200,000</option>
-                                <option value="300000">300,000</option>
-                                <option value="400000">400,000</option>
-                                <option value="500000">500,000</option>
-                                <option value="600000">600,000</option>
-                                <option value="700000">700,000</option>
-                                <option value="800000">800,000</option>
-                                <option value="900000">900,000</option>
-                                <option value="1000000">1,000,000</option>
-                                <option value="1200000">1,200,000</option>
-                                <option value="1400000">1,400,000</option>
-                                <option value="1600000">1,600,000</option>
-                                <option value="1800000">1,800,000</option>
-                                <option value="2000000">2,000,000</option>
-                                <option value="2200000">2,200,000</option>
-                                <option value="2400000">2,400,000</option>
-                                <option value="2600000">2,600,000</option>
-                                <option value="2800000">2,800,000</option>
-                                <option value="3000000">3,000,000</option>
-                                <option value="3500000">3,500,000</option>
-                                <option value="4000000">4,000,000</option>
-                                <option value="4500000">4,500,000</option>
-                                <option value="5000000">5,000,000</option>
-                                <option value="5500000">5,500,000</option>
-                                <option value="6000000">6,000,000</option>
-                                <option value="6500000">6,500,000</option>
-                                <option value="7000000">7,000,000</option>
-                                <option value="7500000">7,500,000</option>
-                                <option value="8000000">8,000,000</option>
-                                <option value="8500000">8,500,000</option>
-                                <option value="9000000">9,000,000</option>
-                                <option value="9500000">9,500,000</option>
-                                <option value="10000000">10,000,000</option>
-                                <option value="12000000">12,000,000</option>
-                                <option value="14000000">14,000,000</option>
-                                <option value="16000000">16,000,000</option>
-                                <option value="18000000">18,000,000</option>
-                                <option value="20000000">20,000,000</option>
-                                <option value="30000000">30,000,000</option>
-                                <option value="40000000">40,000,000</option>
-                                <option value="50000000">50,000,000</option>
-                                <option value="60000000">60,000,000</option>
-                                <option value="70000000">70,000,000</option>
-                                <option value="80000000">80,000,000</option>
-                                <option value="90000000">90,000,000</option>
-                                <option value="100000000">100,000,000</option>
-                              </select>
-                            </div>
-                            <span class="d-inline-block ml-3 mr-3">To</span>
-                            <div
-                              class="price-max-range max-price-mobile d-inline-block"
-                            >
-                              <label for="max-price"
-                                ><span class="search-label"
-                                  >Max Price (AED)</span
-                                ></label
-                              >
-                              <select name="max-price">
-                                <option value="0">0</option>
-                                <option value="100000">100,000</option>
-                                <option value="200000">200,000</option>
-                                <option value="300000">300,000</option>
-                                <option value="400000">400,000</option>
-                                <option value="500000">500,000</option>
-                                <option value="600000">600,000</option>
-                                <option value="700000">700,000</option>
-                                <option value="800000">800,000</option>
-                                <option value="900000">900,000</option>
-                                <option value="1000000">1,000,000</option>
-                                <option value="1200000">1,200,000</option>
-                                <option value="1400000">1,400,000</option>
-                                <option value="1600000">1,600,000</option>
-                                <option value="1800000">1,800,000</option>
-                                <option value="2000000">2,000,000</option>
-                                <option value="2200000">2,200,000</option>
-                                <option value="2400000">2,400,000</option>
-                                <option value="2600000">2,600,000</option>
-                                <option value="2800000">2,800,000</option>
-                                <option value="3000000">3,000,000</option>
-                                <option value="3500000">3,500,000</option>
-                                <option value="4000000">4,000,000</option>
-                                <option value="4500000">4,500,000</option>
-                                <option value="5000000">5,000,000</option>
-                                <option value="5500000">5,500,000</option>
-                                <option value="6000000">6,000,000</option>
-                                <option value="6500000">6,500,000</option>
-                                <option value="7000000">7,000,000</option>
-                                <option value="7500000">7,500,000</option>
-                                <option value="8000000">8,000,000</option>
-                                <option value="8500000">8,500,000</option>
-                                <option value="9000000">9,000,000</option>
-                                <option value="9500000">9,500,000</option>
-                                <option value="10000000">10,000,000</option>
-                                <option value="12000000">12,000,000</option>
-                                <option value="14000000">14,000,000</option>
-                                <option value="16000000">16,000,000</option>
-                                <option value="18000000">18,000,000</option>
-                                <option value="20000000">20,000,000</option>
-                                <option value="30000000">30,000,000</option>
-                                <option value="40000000">40,000,000</option>
-                                <option value="50000000">50,000,000</option>
-                                <option value="60000000">60,000,000</option>
-                                <option value="70000000">70,000,000</option>
-                                <option value="80000000">80,000,000</option>
-                                <option value="90000000">90,000,000</option>
-                                <option value="100000000">100,000,000</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row filter-bottom">
-                          <div
-                            class="col-6 d-flex justify-content-start align-items-center pl-0"
-                          >
-                            <a
-                              href="javascript:void(0);"
-                              class="clear-selection"
-                              id="mobile-clear-price"
-                              >Clear Selection</a
-                            >
-                          </div>
-                          <div class="col-6 d-flex justify-content-end pr-0">
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-green apply-btn close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                              id="mobile-price-apply"
-                              >Apply</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="bedroomsModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="bedroomsModalLabel"
-                    aria-hidden="true"
-                    data-backdrop="false"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content w-100">
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <i class="fal fa-times" aria-hidden="true"></i>
-                        </button>
-                        <div class="modal-body">
-                          <div class="bedroom-options select-sec-options">
-                            <h3>Bedrooms</h3>
-                            <ul class="mobile-bed-checkbox">
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-bed1"
-                                  name="bed[]"
-                                  value="1 Bedroom"
-                                />
-                                <label for="mobile-bed1">1 Bedroom</label><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-bed2"
-                                  name="bed[]"
-                                  value="2 Bedrooms"
-                                />
-                                <label for="mobile-bed2">2 Bedrooms</label
-                                ><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-bed3"
-                                  name="bed[]"
-                                  value="3 Bedrooms"
-                                />
-                                <label for="mobile-bed3">3 Bedrooms</label
-                                ><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-bed4"
-                                  name="bed[]"
-                                  value="4 Bedrooms"
-                                />
-                                <label for="mobile-bed4">4 Bedrooms</label
-                                ><br />
-                              </li>
-                              <li>
-                                <input
-                                  type="checkbox"
-                                  id="mobile-bed5"
-                                  name="bed[]"
-                                  value="5+ Bedrooms"
-                                />
-                                <label for="mobile-bed5">5+ Bedrooms</label
-                                ><br />
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row filter-bottom">
-                          <div
-                            class="col-6 d-flex justify-content-start align-items-center pl-0"
-                          >
-                            <a
-                              href="javascript:void(0);"
-                              class="clear-selection"
-                              id="mobile-clear-bedrooms"
-                              >Clear Selection</a
-                            >
-                          </div>
-                          <div class="col-6 d-flex justify-content-end pr-0">
-                            <a
-                              href="javascript:void(0);"
-                              class="btn btn-green apply-btn close"
-                              data-dismiss="modal"
-                              aria-label="Close"
-                              id="mobile-bedrooms-apply"
-                              >Apply</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End  Modals for Mobile Search Component -->
-              </form>
             </div>
           </div>
         </div>
@@ -1818,8 +1024,91 @@
           </div>
         </div>
 
+        <div class="projectssectionwrap padd100">
+          <div class="projects-container">
+            <div class="projects-row">
+              <div class="col-lg-12">
+                <span
+                  class="captext fcolorlgt wow animate__ animate__fadeInUp"
+                  style="visibility: visible; animation-name: fadeInUp"
+                  >Our Projects</span
+                >
+                <h3
+                  class="headingtag fcolordrk mb-4 wow animate__ animate__fadeInUp"
+                  style="visibility: visible; animation-name: fadeInUp"
+                >
+                  An address that delivers excellence
+                </h3>
+              </div>
+              <div class="col-lg-10">
+                <p
+                  class="clrblk wow animate__ animate__fadeInUp"
+                  style="visibility: visible; animation-name: fadeInUp"
+                >
+                  Signature Global projects are renowned for ideal locations,
+                  impeccable quality of construction, desirable amenities and
+                  reasonable prices. Their unique nature in terms of planning,
+                  design, workmanship and service makes them most coveted.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="productimg">
+            <div class="projects-container">
+              <div class="projects-row">
+                <div class="col-lg-6 col-md-6">
+                  <a href="residential">
+                    <div class="progrid fmt">
+                      <img
+                        src="https://www.signatureglobal.in/images/main-banner-one.webp"
+                        class="lazy"
+                        alt="Signature Global Residential"
+                        title="Signature Global Residential"
+                      />
+                      <div class="sliderupertwxt">
+                        <div class="texttag bon_vivant">Residential</div>
+                      </div>
+                      <div class="plusicon">
+                        <div class="hoverbd">
+                          <img
+                            src="https://www.signatureglobal.in/images/icon/Plus.svg"
+                            alt="Plus Icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <a href="commercial">
+                    <div class="progrid">
+                      <img
+                        src="https://www.signatureglobal.in/images/main-banner-two.webp"
+                        class="lazy"
+                        alt="Signature Global Commercial"
+                        title="Signature Global Commercial"
+                      />
+                      <div class="sliderupertwxt">
+                        <div class="texttag bon_vivant">Commercial</div>
+                      </div>
+                      <div class="plusicon">
+                        <div class="hoverbd">
+                          <img
+                            src="https://www.signatureglobal.in/images/icon/Plus.svg"
+                            alt="Plus Icon"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- FEATURED COMMUNITIES -->
-        <div class="jumbotron home-featured-communities">
+        <!-- <div class="jumbotron home-featured-communities">
           <div class="communities-menu-featured">
             <div class="container">
               <span class="section-tagline">COMMUNITIES </span>
@@ -1967,7 +1256,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- DIGITAL EMAAR ONE APP -->
         <div class="jumbotron pt-0 home-digital-experience">
@@ -1978,7 +1267,7 @@
                   <div class="container section-awards">
                     <div class="row">
                       <div class="col-12 text-center content-inner">
-                        <div class="section-award-inner">
+                        <div>
                           <h2>OUR AWARDS</h2>
                           <h4>
                             TDI has been doing exception work since years and
@@ -2097,7 +1386,7 @@
           >
             <span class="section-tagline">MORE</span>
             <h2>Neighbourhood brands</h2>
-            <div class="row" style="justify-content: space-between">
+            <div class="row neighbourbrand_style">
               <div>
                 <img
                   src="http://www.tdiinfracorp.com/images/clients/pantaloons.png"
@@ -2352,7 +1641,7 @@
                   id="nav_menu-4"
                   class="widget widget_nav_menu nav-accordion"
                 >
-                  <h3 class="widget-title">Communities</h3>
+                  <h3 class="widget-title">Projects</h3>
                   <div class="menu-footer-communities-container">
                     <ul id="menu-footer-communities" class="menu">
                       <li
@@ -2481,17 +1770,8 @@
         </div>
 
         <div class="homepage-sticky-search d-lg-none">
-          <div class="row">
-            <div class="col-6 pr-2">
-              <a
-                href="#"
-                class="btn btn-ghost footer-search-prop-btn w-100"
-                data-toggle="modal"
-                data-target="#prop-search-mobileform-modal"
-                >Search</a
-              >
-            </div>
-            <div class="col-6 pl-2">
+          <div class="row" style="justify-content: center;">
+            <div class="pl-2">
               <a
                 href="#"
                 class="btn btn-blue get-touch-btn w-100"
@@ -2504,47 +1784,7 @@
           </div>
         </div>
       </footer>
-      <script>
-        gform.initializeOnLoaded(function () {
-          jQuery(document).on(
-            "gform_post_render",
-            function (event, formId, currentPage) {
-              if (formId == 5) {
-                if (!jQuery("#input_5_1+.ginput_counter").length) {
-                  jQuery("#input_5_1").textareaCount({
-                    maxCharacterSize: 60,
-                    originalStyle: "ginput_counter",
-                    truncate: true,
-                    errorStyle: "",
-                    displayFormat: "#input of #max max characters",
-                  });
-                  jQuery("#input_5_1")
-                    .next(".ginput_counter")
-                    .attr("aria-live", "polite");
-                }
-                if (!jQuery("#input_5_12+.ginput_counter").length) {
-                  jQuery("#input_5_12").textareaCount({
-                    maxCharacterSize: 20,
-                    originalStyle: "ginput_counter",
-                    truncate: true,
-                    errorStyle: "",
-                    displayFormat: "#input of #max max characters",
-                  });
-                  jQuery("#input_5_12")
-                    .next(".ginput_counter")
-                    .attr("aria-live", "polite");
-                }
-                if (typeof Placeholders != "undefined") {
-                  Placeholders.enable();
-                }
-              }
-            }
-          );
-          jQuery(document).bind(
-            "gform_post_conditional_logic",
-            function (event, formId, fields, isInit) {}
-          );
-        });
+      <script> 
       </script>
       <script type="text/javascript">
         jQuery(function ($) {
@@ -2577,9 +1817,11 @@
         };
       </script>
     </div>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="text/javascript">
-      jQuery(function () {
+      var swiper = new Swiper(".mySwiper", {});
+      // jQuery(function () {
         const swiper = new Swiper(".swiper", {
           slidesPerView: 3,
           disableOnInteraction: true,

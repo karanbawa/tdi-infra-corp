@@ -1,0 +1,428 @@
+/*! CSS Used from: https://properties-emaar-com.azureedge.net/wp-content/cache/min/1/1b2016dbd6b998eaeda68fb68c407206.css ; media=all */
+@media all {
+  a {
+    background-color: transparent;
+  }
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+  small {
+    font-size: 80%;
+  }
+  img {
+    border: 0;
+  }
+  h1 {
+    clear: both;
+    color: #24292e;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+  p {
+    margin-bottom: 1.5em;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  small {
+    font-size: 80%;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  small {
+    font-size: 80%;
+    font-weight: 400;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .padd-bottom {
+    padding-bottom: 20px;
+  }
+  .col-lg-10,
+  .col-lg-3,
+  .col-md-12,
+  .col-sm-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media (min-width: 576px) {
+    .col-sm-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .col-md-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-lg-3 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-lg-10 {
+      -ms-flex: 0 0 83.333333%;
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%;
+    }
+    .offset-lg-1 {
+      margin-left: 8.333333%;
+    }
+  }
+  .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+  .card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .card-footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  }
+  .card-deck {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .card-deck .card {
+    margin-bottom: 15px;
+  }
+  @media (min-width: 576px) {
+    .card-deck {
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .card-deck .card {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex: 1 0 0%;
+      flex: 1 0 0%;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+  }
+  .w-100 {
+    width: 100% !important;
+  }
+  .h-100 {
+    height: 100% !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  @media print {
+    *,
+    ::after,
+    ::before {
+      text-shadow: none !important;
+      box-shadow: none !important;
+    }
+    a:not(.btn) {
+      text-decoration: underline;
+    }
+    img {
+      page-break-inside: avoid;
+    }
+    p {
+      orphans: 3;
+      widows: 3;
+    }
+    .container {
+      min-width: 992px !important;
+    }
+  }
+  h1 {
+    font-family: "Optima LT W02 Roman";
+    color: #000;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  h1 {
+    font-size: 46px;
+    line-height: 60px;
+    margin: 0 0 25px;
+  }
+  p {
+    margin: 0 0 30px;
+  }
+  a {
+    color: #232323;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  :focus {
+    outline: none;
+  }
+  .card {
+    border: 0;
+  }
+  .vr-title-small-for-partners {
+    color: #9d9d9c;
+    font-weight: 700;
+    font-family: "Lato", "Open Sans", sans-serif;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .vr-property-title {
+    color: #000;
+    font-family: "Optima LT W02 Roman";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 36px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+  }
+  .vr-property-description {
+    color: #232323;
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .vr-property-details-block {
+    padding: 30px 8px 8px 8px;
+  }
+  .cta-start-vr-tour {
+    width: 200px;
+    display: block;
+    border: 1px solid #232323;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #232323;
+    font-family: "Lato", "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 13px 15px !important;
+    margin: auto;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    text-align: center;
+  }
+  .cta-start-vr-tour:hover {
+    background-color: #071c35;
+    color: #fff !important;
+  }
+  .vr-tour-listing-partners {
+    margin-top: 74px;
+  }
+  .partners-vr-tour-list .card-deck .card {
+    margin: 0;
+  }
+  .partners-vr-tour-list .card-deck .card .card-footer {
+    padding: 0;
+    background-color: transparent;
+    border-top: 0;
+  }
+  .partners-vr-tour-list > div.card-deck > div.flexWrap {
+    margin-top: 133px;
+  }
+  .partners-vr-tour-list > div.card-deck > div.flexWrap:nth-child(1),
+  .partners-vr-tour-list > div.card-deck > div.flexWrap:nth-child(2),
+  .partners-vr-tour-list > div.card-deck > div.flexWrap:nth-child(3),
+  .partners-vr-tour-list > div.card-deck > div.flexWrap:nth-child(4) {
+    margin-top: 0;
+  }
+  .partners-vr-tour-list > div.card-deck {
+    margin-bottom: 80px;
+  }
+  .main-title-vr-partners {
+    margin-top: 57px;
+  }
+  .vr-title-small-for-partners {
+    color: #232323 !important;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1400px;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    div.partners-vr-tour-list > div.row > div.flexWrap {
+      margin-bottom: 35px;
+    }
+    .partners-vr-tour-list > div.card-deck > div.flexWrap {
+      margin-top: initial;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h1 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+  .vr-tour-listing-partners > .container {
+    padding: 0;
+  }
+  img {
+    opacity: 1;
+    transition: opacity 0.15s;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "Optima LT W02 Roman";
+  src: url(https://properties-emaar-com.azureedge.net/wp-content/themes/emaar/fonts/5962255/9bdc4bb6-32aa-441c-9559-d4024d913ae8.woff2)
+      format("woff2"),
+    url(https://properties-emaar-com.azureedge.net/wp-content/themes/emaar/fonts/5962255/9d112252-b82d-4c05-a25f-e73ff0aa2601.woff)
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://properties-emaar-com.azureedge.net/wp-content/themes/emaar/fonts/google-font-1.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://properties-emaar-com.azureedge.net/wp-content/themes/emaar/fonts/google-font-2.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://properties-emaar-com.azureedge.net/wp-content/themes/emaar/fonts/google-font-3.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}

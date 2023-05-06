@@ -146,6 +146,11 @@
       .nav ul li a {
         color: inherit;
       }
+      @media (max-width: 600px) {
+        .hideonPhone {
+          display: none;
+        }
+      }
   .container {
     width: 100%;
     padding-right: 15px;

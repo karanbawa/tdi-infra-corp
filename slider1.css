@@ -597,7 +597,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 454px;
+    height: 100vh;
     position: relative;
   }
   @media screen and (max-width: 1024px) {
@@ -634,7 +634,7 @@ body {
   }
   @media screen and (max-width: 767px) {
     .spaces2-banner .banner-image {
-      height: 200px;
+      height: 100vh;
     }
   }
   .spaces2-banner .banner-image .spaces2-text-slider {

@@ -7,6 +7,18 @@ body {
   color: #232323;
   background-color: #fff;
 }
+.footer-alignment {
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 600px) {
+  .footer-alignment {
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media all {
   footer {
     display: block;

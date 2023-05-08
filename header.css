@@ -566,7 +566,7 @@ a {
 }
 .overlayhd::after {
   top: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)); */
 }
 .header-area {
   position: absolute;

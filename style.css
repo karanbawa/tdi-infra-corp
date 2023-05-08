@@ -1,4 +1,12 @@
 /*! CSS Used from: https://cdn.emaar.com/wp-content/themes/twentytwenty-child/inc/assets/css/ext.min.css?ver=2 ; media=all */
+body {
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232323;
+  background-color: #fff;
+}
 @media all {
   *,
   ::after,
@@ -259,11 +267,11 @@ p{line-height:1.5;}
 .captext{font-weight:500;letter-spacing:2px;}
 .captext{text-transform:uppercase;}
 *{box-sizing:border-box;padding:0;outline:0;}
-h3{font-family:"Bon Vivant Family Serif"!important;}
-p{font-family:"Halvar Eng Lt";}
+/* h3{font-family:"Bon Vivant Family Serif"!important;} */
+/* p{font-family:"Halvar Eng Lt";} */
 p{font-weight:300;font-size:18px;}
 .productimg .progrid{overflow:hidden;}
-.bon_vivant,.headingtag{font-family:"Bon Vivant Family Serif";}
+/* .bon_vivant,.headingtag{font-family:"Bon Vivant Family Serif";} */
 span.fcolorlgt{color:#6c939299!important;opacity:1!important;}
 .fcolorlgt{color:#6c9392!important;}
 .fcolordrk{color:#203d3b!important;}
@@ -466,7 +474,7 @@ p{font-size:16px;letter-spacing:0.5px;}
     display: flex;
     font-family: Lato, sans-serif;
   }
-  span.section-tagline:after {
+  /* span.section-tagline:after {
     display: block;
     content: "";
     height: 1px;
@@ -474,7 +482,7 @@ p{font-size:16px;letter-spacing:0.5px;}
     background-color: #9d9d9c;
     margin-top: 11px;
     margin-left: 10px;
-  }
+  } */
   .latest-launches-left {
     margin-top: 100px;
   }
@@ -633,7 +641,7 @@ span.section-tagline {
   display: flex;
   font-family: Lato, sans-serif;
 }
-span.section-tagline:after {
+/* span.section-tagline:after {
   display: block;
   content: "";
   height: 1px;
@@ -641,7 +649,7 @@ span.section-tagline:after {
   background-color: #9d9d9c;
   margin-top: 11px;
   margin-left: 10px;
-}
+} */
 .latest-launches-left {
   margin-top: 100px;
 }

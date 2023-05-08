@@ -329,9 +329,9 @@ body {
     background-color: transparent;
     border-top: 0;
   }
-  .partners-vr-tour-list > div.card-deck > div.flexWrap {
+  /* .partners-vr-tour-list > div.card-deck > div.flexWrap {
     margin-top: 133px;
-  }
+  } */
   .partners-vr-tour-list > div.card-deck > div.flexWrap:nth-child(1),
   .partners-vr-tour-list > div.card-deck > div.flexWrap:nth-child(2),
   .partners-vr-tour-list > div.card-deck > div.flexWrap:nth-child(3),

@@ -1,4 +1,12 @@
 /*! CSS Used from: https://properties-emaar-com.azureedge.net/wp-content/cache/min/1/1b2016dbd6b998eaeda68fb68c407206.css ; media=all */
+body {
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232323;
+  background-color: #fff;
+}
 @media all {
   a {
     background-color: transparent;

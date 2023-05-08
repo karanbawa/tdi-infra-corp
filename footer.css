@@ -1,4 +1,12 @@
 /*! CSS Used from: https://tdi-infra-corp.vercel.app/contactus.css */
+body {
+  font-family: "Lato", "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232323;
+  background-color: #fff;
+}
 @media all {
   footer {
     display: block;

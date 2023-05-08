@@ -804,9 +804,9 @@ p {
   padding: 0;
   outline: 0;
 }
-p {
+/* p {
   font-family: "Halvar Eng Lt";
-}
+} */
 p {
   font-weight: 300;
   font-size: 18px;

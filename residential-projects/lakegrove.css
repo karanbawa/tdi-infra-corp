@@ -1079,6 +1079,24 @@ body {
     border: 2px solid #fff;
     border-radius: 1px;
   }
+  @media (min-width: 992px) {
+    .ddjay-desktop-view {
+      justify-content: space-between;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .layout-width-set {
+      width: 50%;
+    }
+    .padding-right-space {
+      padding-right: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    .ddjay-desktop-view {
+      justify-content: center;
+    }
+  }
   .btn-blue {
     background-color: #071c35;
     color: #fff !important;

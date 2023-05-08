@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TDIInfraCorp</title>
+    <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./slider1.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./footer.css" />
@@ -13,206 +14,684 @@
   <body
     class="home page-template page-template-front-page page-template-front-page-php page page-id-7 wp-embed-responsive singular enable-search-modal missing-post-thumbnail has-no-pagination not-showing-comments show-avatars front-page footer-top-hidden"
   >
-    <header class="header">
-      <div class="header__inner">
-        <div class="logo">
-          <img
-            src="http://www.tdiinfracorp.com/manage/uploads/logo.png"
-            alt="TDI Infracorp (India) Ltd."
-            width="100"
-            height="20"
-          />
-          <!-- </div> -->
-        </div>
-        <nav class="nav hideonPhone">
-          <ul style="margin-top: 8px">
-            <li>
-              <a href="#"><h5>HOME</h5></a>
-            </li>
-            <li>
-              <a href="#"><h5>TESTIMONIALS</h5></a>
-            </li>
-            <li>
-              <a href="#"><h5>MEDIA ROOM</h5></a>
-            </li>
-            <li>
-              <a href="#"><h5>PROJECTS</h5></a>
-            </li>
-          </ul>
-          <ul style="margin-top: 15px">
-            <li>
-              <a href="#"><h5>ABOUT US</h5></a>
-            </li>
-            <li>
-              <a href="#"><h5>RESIDENTIAL</h5></a>
-            </li>
-            <li>
-              <a href="#"><h5>COMMERICIAL</h5></a>
-            </li>
-            <li>
-              <a href="#"><h5>CONTACT US</h5></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="landing-banner spaces2-banner">
-      <div class="banner-image home-landing-banner">
-        <div class="container">
+    <div id="mySidenav" class="sidenav">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()"
+        style="color: black"
+        >&times;</a
+      >
+      <a href="#" style="color: black">Home</a>
+      <a href="#" style="color: black">About Us</a>
+      <a href="#" style="color: black">Residential Projects</a>
+      <a href="#" style="color: black">Commercial Projects</a>
+      <a href="#" style="color: black">Testimonials</a>
+      <a href="#" style="color: black">Media House</a>
+      <a href="#" style="color: black">Contact Us</a>
+    </div>
+    <div id="main">
+      <header class="header header-area">
+        <div class="overlayhd"></div>
+        <nav class="navbar navbar-expand-md navbar-dark">
           <div
-            class="swiper-phone-hide swiper-container swiper landing-collection spaces2-text-slider swiper-container-horizontal swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
-            style="background-color: transparent !important"
+            class="container"
+            style="justify-content: left; margin-left: 10px"
+          >
+            <button
+              type="button"
+              id="navBar"
+              class="navbar-toggler collapsed"
+              data-target="#main-nav"
+              onclick="openNav()"
+            >
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+              <span class="menu-icon-bar"></span>
+            </button>
+            <a href="" class="navbar-brand"
+              ><img
+                src="http://www.tdiinfracorp.com/manage/uploads/logo.png"
+                alt="TDI Infracorp (India) Ltd."
+                width="100"
+                height="20"
+            /></a>
+            <div id="main-nav" class="navbar-collapse">
+              <div class="topnavbaxy">
+                <ul class="navbar-nav width100 dlfx">
+                  <li>
+                    <a
+                      href="https://www.signatureglobal.in/career.php"
+                      class="nav-link"
+                      title="Signature Global - Carrer"
+                      >Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sgsite.secure.force.com/sg?cpForm=true"
+                      target="_blank"
+                      class="nav-link"
+                      title="Signature Global  - Associate registration payement"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.signatureglobal.in/pay-online.php"
+                      class="nav-link"
+                      title="Signature Global  - Pay Online"
+                      >Media Room</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.signatureglobal.in/investor.php"
+                      class="nav-link"
+                      title="Signature Global  - Investor"
+                      >Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.signatureglobal.in/customer_support.php"
+                      class="nav-link"
+                      title="Signature Global  - Custome Support"
+                      >Customer Support
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.signatureglobal.in/pdf/SG_Mobile_App_User_Manual.pdf"
+                      class="nav-link"
+                      target="_blank"
+                      >Mobile app User Manual</a
+                    >
+                  </li>
+                  <!--<li><a href="#" class="nav-link"><img src="https://www.signatureglobal.in/images/icon/Search.svg" alt="Search"/></a></li>-->
+                </ul>
+              </div>
+              <ul class="navbar-nav width100 dlfx">
+                <li class="nav-item">
+                  <a
+                    href="https://www.signatureglobal.in/about-us.php"
+                    class="nav-link"
+                    title="Signature Global  - About Us"
+                    >About US
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    title="Residentential projects by Signature Global"
+                    class="nav-link addac hdbg dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >RESIDENTIAL
+                    <img
+                      src="https://www.signatureglobal.in/images/icon/arrow-down-wh.svg"
+                      alt=""
+                      title=""
+                  /></a>
+                  <div class="dropdown-menu abdrop">
+                    <div class="subnavdown paddn60">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4 col-md-5">
+                            <strong>Residential</strong>
+                            <ul>
+                              <li>
+                                <a
+                                  href="https://www.signatureglobal.in/residential/affordable/"
+                                  >Affordable Group Housing</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.signatureglobal.in/residential/premium/"
+                                  >Premium Independent Floors</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.signatureglobal.in/residential/plots/"
+                                  >Residential Plots</a
+                                >
+                              </li>
+                            </ul>
+                            <div class="dskhide">
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.signatureglobal.in/residential?status=ongoing"
+                                    >Ongoing Projects</a
+                                  >
+                                </li>
+                                <li><span>|</span></li>
+                                <li>
+                                  <a
+                                    href="https://www.signatureglobal.in/residential?status=delivered"
+                                    >Delivered</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-8 col-md-7">
+                            <div class="rightnavpro">
+                              <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                  <div class="projectsbtn">
+                                    <strong>Residential</strong>
+                                    <div class="pronavbtn">
+                                      <a
+                                        class="abtn halvar_rg"
+                                        href="https://www.signatureglobal.in/residential/"
+                                      >
+                                        View Projects
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 16.88 15.91"
+                                        >
+                                          <g id="Layer_6" data-name="Layer 6">
+                                            <g
+                                              id="Layer_1-6"
+                                              data-name="Layer 6"
+                                            >
+                                              <polyline
+                                                class="cls-1"
+                                                points="8.93 15.41 15.42 8.91 16.38 7.96 0.5 7.96"
+                                              ></polyline>
+                                              <line
+                                                class="cls-1"
+                                                x1="8.93"
+                                                y1="0.5"
+                                                x2="14.17"
+                                                y2="5.75"
+                                              ></line>
+                                            </g>
+                                          </g>
+                                        </svg>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-7 col-md-12">
+                                  <div class="navproimg">
+                                    <img
+                                      src="https://www.signatureglobal.in/images/Resdential-nvbg.jpg"
+                                      alt="Signature Global  - Resdential"
+                                      title="Signature Global  - Resdential "
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    title="Commercial projects by Signature Global"
+                    class="nav-link addac hdbg dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >COMMERCIAL
+                    <img
+                      src="https://www.signatureglobal.in/images/icon/arrow-down-wh.svg"
+                      alt=""
+                      title=""
+                  /></a>
+                  <div class="dropdown-menu abdrop">
+                    <div class="subnavdown paddn60">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4 col-md-6">
+                            <strong>Commercial</strong>
+
+                            <ul>
+                              <li>
+                                <a
+                                  href="https://www.signatureglobal.in/commercial/society-shops/"
+                                  >Society Shops</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.signatureglobal.in/commercial/malls/"
+                                  >Mall</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.signatureglobal.in/commercial/sco-plots/"
+                                  >SCO</a
+                                >
+                              </li>
+                            </ul>
+                            <div class="dskhide">
+                              <ul>
+                                <li>
+                                  <a
+                                    href="https://www.signatureglobal.in/commercial?status=ongoing"
+                                    >Ongoing Projects</a
+                                  >
+                                </li>
+                                <li><span>|</span></li>
+                                <li>
+                                  <a
+                                    href="https://www.signatureglobal.in/commercial?status=delivered"
+                                    >Delivered</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-8 col-md-6">
+                            <div class="rightnavpro">
+                              <div class="row">
+                                <div class="col-lg-5 col-md-6">
+                                  <div class="projectsbtn">
+                                    <strong>Commercial</strong>
+                                    <div class="pronavbtn">
+                                      <a
+                                        class="abtn halvar_rg"
+                                        href="https://www.signatureglobal.in/commercial/"
+                                      >
+                                        View Projects
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 16.88 15.91"
+                                        >
+                                          <g id="Layer_7" data-name="Layer 7">
+                                            <g
+                                              id="Layer_1-7"
+                                              data-name="Layer 7"
+                                            >
+                                              <polyline
+                                                class="cls-1"
+                                                points="8.93 15.41 15.42 8.91 16.38 7.96 0.5 7.96"
+                                              ></polyline>
+                                              <line
+                                                class="cls-1"
+                                                x1="8.93"
+                                                y1="0.5"
+                                                x2="14.17"
+                                                y2="5.75"
+                                              ></line>
+                                            </g>
+                                          </g>
+                                        </svg>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-7 col-md-12">
+                                  <div class="navproimg">
+                                    <img
+                                      src="https://www.signatureglobal.in/images/Commercial-nvbg.jpg"
+                                      alt="Signature Global  - Commercial"
+                                      title="Signature Global  - Commercial"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    title="Signature Global  - Contact Us"
+                    href="https://www.signatureglobal.in/contact.php"
+                    class="nav-link"
+                    >CONTACT US
+                  </a>
+                </li>
+              </ul>
+              <div class="bottommediamobwrap">
+                <ul class="pplink">
+                  <li>
+                    <a href="https://www.signatureglobal.in/privacy-policy.php"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li><span>|</span></li>
+                  <li>
+                    <a
+                      href="https://www.signatureglobal.in/social-media-policy.php"
+                      >Social Media Policy</a
+                    >
+                  </li>
+                </ul>
+                <div class="footermedianav mtopft">
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/SignatureGlobal"
+                        target="_blank"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/signatureglobal"
+                        target="_blank"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/signatureglobal/"
+                        target="_blank"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/channel/UCWjSj4Lo9M2GKe6Q3qKzXzA"
+                        target="_blank"
+                        ><i class="fa-brands fa-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/signature-global"
+                        target="_blank"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="landing-banner spaces2-banner">
+        <div class="banner-image home-landing-banner">
+          <div class="container">
+            <div
+              class="swiper-phone-hide swiper-container swiper landing-collection spaces2-text-slider swiper-container-horizontal swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
+              style="background-color: transparent !important"
+            >
+              <div
+                class="swiper-wrapper"
+                style="
+                  transition-duration: 0ms;
+                  transform: translate3d(-1800px, 0px, 0px);
+                "
+                id="swiper-wrapper-5ac55d59934e0108d"
+                aria-live="off"
+              >
+                <div
+                  class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
+                  style="
+                    width: 450px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                  "
+                  data-swiper-slide-index="2"
+                  role="group"
+                  aria-label="3 / 3"
+                >
+                  <div class="collection-wrapper">
+                    <h2
+                      style="
+                        margin: 20px 0px;
+                        font-weight: 100;
+                        font-size: 24px;
+                        line-height: 30px;
+                      "
+                    >
+                      A thing of beauty is a joy forever. Explore Zebboi
+                      <strong>Mosaic</strong> now!
+                    </h2>
+                    <a
+                      class="btn btn-red"
+                      href="./residential-projects.html"
+                      style="font-size: 14px"
+                      >view more</a
+                    >
+                  </div>
+                </div>
+                <!-- Event Banner -->
+                <!-- Banner GVT 1 -->
+                <!-- Banner GVT 2 -->
+                <!-- Banner 1 -->
+                <div
+                  class="swiper-slide swiper-slide-duplicate-active"
+                  style="
+                    width: 450px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                  "
+                  data-swiper-slide-index="0"
+                  role="group"
+                  aria-label="1 / 3"
+                >
+                  <div class="collection-wrapper">
+                    <h1
+                      style="
+                        margin: 20px 0px;
+                        font-weight: 100;
+                        font-size: 24px;
+                        line-height: 30px;
+                      "
+                    >
+                      <strong>Presence</strong> in all over india
+                    </h1>
+                    <a
+                      class="btn btn-red"
+                      href="./residential-projects.html"
+                      style="font-size: 14px"
+                      >Explore</a
+                    >
+                  </div>
+                </div>
+                <!-- Banner 2 -->
+                <div
+                  class="swiper-slide"
+                  style="
+                    width: 450px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                  "
+                  data-swiper-slide-index="1"
+                  role="group"
+                  aria-label="2 / 3"
+                >
+                  <div class="collection-wrapper">
+                    <h2
+                      style="
+                        margin: 20px 0px;
+                        font-weight: 100;
+                        font-size: 24px;
+                        line-height: 30px;
+                      "
+                    >
+                      Nature designed, TDI perfected!<br /><strong
+                        >Housing</strong
+                      >
+                      like no other!
+                    </h2>
+                    <a
+                      class="btn btn-red"
+                      href="./residential-projects.html"
+                      style="font-size: 14px"
+                      >view more</a
+                    >
+                  </div>
+                </div>
+                <!-- Banner 3 -->
+                <div
+                  class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
+                  style="
+                    width: 450px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                  "
+                  data-swiper-slide-index="2"
+                  role="group"
+                  aria-label="3 / 3"
+                >
+                  <div class="collection-wrapper">
+                    <h2
+                      style="
+                        margin: 20px 0px;
+                        font-weight: 100;
+                        font-size: 24px;
+                        line-height: 30px;
+                      "
+                    >
+                      A thing of beauty is a joy forever. Explore TDI
+                      <strong>now!</strong>
+                    </h2>
+                    <a
+                      class="btn btn-red"
+                      href="./residential-projects.html"
+                      style="font-size: 14px"
+                      >view more</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+                  style="
+                    width: 450px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                  "
+                  data-swiper-slide-index="0"
+                  role="group"
+                  aria-label="1 / 3"
+                >
+                  <div class="collection-wrapper">
+                    <h1
+                      style="
+                        margin: 20px 0px;
+                        font-weight: 100;
+                        font-size: 24px;
+                        line-height: 30px;
+                      "
+                    >
+                      <strong>Exports</strong> in more than 10+ countries
+                    </h1>
+                    <a
+                      class="btn collection-btn"
+                      href="./aboutus"
+                      style="font-size: 14px"
+                      >Explore</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <span
+                class="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              ></span>
+            </div>
+          </div>
+          <div
+            class="swiper-container swiper spaces2imageslider spaces2-image-slider swiper-container-horizontal swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
           >
             <div
               class="swiper-wrapper"
               style="
                 transition-duration: 0ms;
-                transform: translate3d(-1800px, 0px, 0px);
+                transform: translate3d(-5052px, 0px, 0px);
               "
-              id="swiper-wrapper-5ac55d59934e0108d"
+              id="swiper-wrapper-1132afd6ec3874fc"
               aria-live="off"
             >
               <div
                 class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
-                style="width: 450px; background-color: rgba(255, 255, 255, 0.7)"
+                style="width: 1263px"
                 data-swiper-slide-index="2"
                 role="group"
                 aria-label="3 / 3"
               >
-                <div class="collection-wrapper">
-                  <h2
-                    style="
-                      margin: 20px 0px;
-                      font-weight: 100;
-                      font-size: 24px;
-                      line-height: 30px;
-                    "
-                  >
-                    A thing of beauty is a joy forever. Explore Zebboi
-                    <strong>Mosaic</strong> now!
-                  </h2>
-                  <a
-                    class="btn collection-btn"
-                    href="./tiles-collection"
-                    style="font-size: 14px"
-                    >view more</a
-                  >
-                </div>
+                <a
+                  class="linkColorChange"
+                  href="./residential-projects/the-grand-retreat.html"
+                  ><img
+                    class="hero-image-height-phone"
+                    src="https://www.tdiinfracorp.com/images/slider/1.jpg"
+                    alt="Mosaic Banner"
+                    style="height: 100vh"
+                /></a>
               </div>
-              <!-- Event Banner -->
-              <!-- Banner GVT 1 -->
-              <!-- Banner GVT 2 -->
-              <!-- Banner 1 -->
               <div
                 class="swiper-slide swiper-slide-duplicate-active"
-                style="width: 450px; background-color: rgba(255, 255, 255, 0.7)"
+                style="width: 1263px"
                 data-swiper-slide-index="0"
                 role="group"
                 aria-label="1 / 3"
               >
-                <div class="collection-wrapper">
-                  <h1
-                    style="
-                      margin: 20px 0px;
-                      font-weight: 100;
-                      font-size: 24px;
-                      line-height: 30px;
-                    "
-                  >
-                    <strong>Presence</strong> in all over india
-                  </h1>
-                  <a
-                    class="btn collection-btn"
-                    href="./residential-projects.html"
-                    style="font-size: 14px"
-                    >Explore</a
-                  >
-                </div>
+                <a
+                  class="linkColorChange"
+                  href="./residential-projects/the-retreat.html"
+                  ><img
+                    class="hero-image-height-phone"
+                    src="https://www.tdiinfracorp.com/images/slider/2.jpg"
+                    alt="Tiles Banner"
+                    style="height: 100vh"
+                /></a>
               </div>
-              <!-- Banner 2 -->
               <div
                 class="swiper-slide"
-                style="width: 450px; background-color: rgba(255, 255, 255, 0.7)"
+                style="width: 1263px"
                 data-swiper-slide-index="1"
                 role="group"
                 aria-label="2 / 3"
               >
-                <div class="collection-wrapper">
-                  <h2
-                    style="
-                      margin: 20px 0px;
-                      font-weight: 100;
-                      font-size: 24px;
-                      line-height: 30px;
-                    "
-                  >
-                    Nature designed, TDI perfected!<br /><strong
-                      >Housing</strong
-                    >
-                    like no other!
-                  </h2>
-                  <a
-                    class="btn collection-btn"
-                    href="./residential-projects.html"
-                    style="font-size: 14px"
-                    >view more</a
-                  >
-                </div>
+                <a
+                  class="linkColorChange"
+                  href="./residential-projects/tdi-lakegrov.html"
+                  ><img
+                    class="hero-image-height-phone"
+                    src="https://www.tdiinfracorp.com/images/slider/3.jpg"
+                    alt="Marble Banner"
+                    style="height: 100vh"
+                /></a>
               </div>
-              <!-- Banner 3 -->
               <div
                 class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
-                style="width: 450px; background-color: rgba(255, 255, 255, 0.7)"
+                style="width: 1263px"
                 data-swiper-slide-index="2"
                 role="group"
                 aria-label="3 / 3"
               >
-                <div class="collection-wrapper">
-                  <h2
-                    style="
-                      margin: 20px 0px;
-                      font-weight: 100;
-                      font-size: 24px;
-                      line-height: 30px;
-                    "
-                  >
-                    A thing of beauty is a joy forever. Explore TDI
-                    <strong>now!</strong>
-                  </h2>
-                  <a
-                    class="btn collection-btn"
-                    href="./residential-projects.html"
-                    style="font-size: 14px"
-                    >view more</a
-                  >
-                </div>
+                <a
+                  class="linkColorChange"
+                  href="./residential-projects/tdi-city-panipat.html"
+                  ><img
+                    class="hero-image-height-phone"
+                    src="https://www.tdiinfracorp.com/images/slider/4.jpg"
+                    alt="Mosaic Banner"
+                    style="height: 100vh"
+                /></a>
               </div>
               <div
                 class="swiper-slide swiper-slide-duplicate swiper-slide-active"
-                style="width: 450px; background-color: rgba(255, 255, 255, 0.7)"
+                style="width: 1263px"
                 data-swiper-slide-index="0"
                 role="group"
                 aria-label="1 / 3"
               >
-                <div class="collection-wrapper">
-                  <h1
-                    style="
-                      margin: 20px 0px;
-                      font-weight: 100;
-                      font-size: 24px;
-                      line-height: 30px;
-                    "
-                  >
-                    <strong>Exports</strong> in more than 10+ countries
-                  </h1>
-                  <a
-                    class="btn collection-btn"
-                    href="./aboutus"
-                    style="font-size: 14px"
-                    >Explore</a
-                  >
-                </div>
+                <a class="linkColorChange" href="./tiles-collection"
+                  ><img
+                    class="hero-image-height-phone"
+                    src="https://www.zebboi.com/home-hero-3.png"
+                    alt="Tiles Banner"
+                    style="height: 100vh"
+                /></a>
               </div>
             </div>
             <span
@@ -222,397 +701,301 @@
             ></span>
           </div>
         </div>
-        <div
-          class="swiper-container swiper spaces2imageslider spaces2-image-slider swiper-container-horizontal swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden"
-        >
-          <div
-            class="swiper-wrapper"
-            style="
-              transition-duration: 0ms;
-              transform: translate3d(-5052px, 0px, 0px);
-            "
-            id="swiper-wrapper-1132afd6ec3874fc"
-            aria-live="off"
-          >
-            <div
-              class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev"
-              style="width: 1263px"
-              data-swiper-slide-index="2"
-              role="group"
-              aria-label="3 / 3"
-            >
-              <a
-                class="linkColorChange"
-                href="./residential-projects/the-grand-retreat.html"
-                ><img
-                  class="hero-image-height-phone"
-                  src="https://www.tdiinfracorp.com/images/slider/1.jpg"
-                  alt="Mosaic Banner"
-                  style="height: 100vh"
-              /></a>
-            </div>
-            <div
-              class="swiper-slide swiper-slide-duplicate-active"
-              style="width: 1263px"
-              data-swiper-slide-index="0"
-              role="group"
-              aria-label="1 / 3"
-            >
-              <a
-                class="linkColorChange"
-                href="./residential-projects/the-retreat.html"
-                ><img
-                  class="hero-image-height-phone"
-                  src="https://www.tdiinfracorp.com/images/slider/2.jpg"
-                  alt="Tiles Banner"
-                  style="height: 100vh"
-              /></a>
-            </div>
-            <div
-              class="swiper-slide"
-              style="width: 1263px"
-              data-swiper-slide-index="1"
-              role="group"
-              aria-label="2 / 3"
-            >
-              <a
-                class="linkColorChange"
-                href="./residential-projects/tdi-lakegrov.html"
-                ><img
-                  class="hero-image-height-phone"
-                  src="https://www.tdiinfracorp.com/images/slider/3.jpg"
-                  alt="Marble Banner"
-                  style="height: 100vh"
-              /></a>
-            </div>
-            <div
-              class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
-              style="width: 1263px"
-              data-swiper-slide-index="2"
-              role="group"
-              aria-label="3 / 3"
-            >
-              <a
-                class="linkColorChange"
-                href="./residential-projects/tdi-city-panipat.html"
-                ><img
-                  class="hero-image-height-phone"
-                  src="https://www.tdiinfracorp.com/images/slider/4.jpg"
-                  alt="Mosaic Banner"
-                  style="height: 100vh"
-              /></a>
-            </div>
-            <div
-              class="swiper-slide swiper-slide-duplicate swiper-slide-active"
-              style="width: 1263px"
-              data-swiper-slide-index="0"
-              role="group"
-              aria-label="1 / 3"
-            >
-              <a class="linkColorChange" href="./tiles-collection"
-                ><img
-                  class="hero-image-height-phone"
-                  src="https://www.zebboi.com/home-hero-3.png"
-                  alt="Tiles Banner"
-                  style="height: 100vh"
-              /></a>
-            </div>
-          </div>
-          <span
-            class="swiper-notification"
-            aria-live="assertive"
-            aria-atomic="true"
-          ></span>
-        </div>
       </div>
-    </div>
 
-    <div class="jumbotron latest-launches pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-4 latest-launches-left mb-3 mb-md-0">
-            <span class="section-tagline">PROPERTIES</span>
-            <h1>Latest Projects</h1>
-            <p>
-              Our properties each have their own unique design aesthetic,
-              providing an aspirational lifestyle within a thriving community,
-              supported by Tdi's community management team.
-            </p>
-            <div class="d-none d-lg-block">
-              <a href="./projects.html" class="btn btn-red d-block w-75"
-                >View All Properties</a
-              >
-            </div>
-          </div>
-          <div class="col-12 col-lg-8">
-            <div class="row latest-launch">
-              <div class="col-12 col-md-6">
-                <div class="prop-block scroll-animate">
-                  <div class="view overlay zoom">
-                    <a href="./residential-projects/the-grand-retreat.html"
-                      ><img
-                        class="d-none d-md-block lazyload"
-                        data-src="https://www.tdiinfracorp.com/images/slider/1.jpg"
-                        alt="The Grand Retreat"
-                        title="The Grand Retreat"
-                        width="440"
-                        height="570"
-                        src="https://www.tdiinfracorp.com/images/slider/1.jpg" />
-                      <img
-                        class="d-block d-md-none lazyload"
-                        data-src="https://www.tdiinfracorp.com/images/slider/1.jpg"
-                        alt="The Grand Retreat"
-                        title="The Grand Retreat"
-                        width="706"
-                        height="385"
-                        src="https://www.tdiinfracorp.com/images/slider/1.jpg"
-                    /></a>
-                  </div>
-                  <section>
-                    <a
-                      href="./residential-projects/the-grand-retreat.html"
-                      class="prop-name"
-                      >The Grand Retreat</a
-                    >
-                    <span class="comm-name">The Valley</span>
-                  </section>
-                </div>
-                <div class="prop-block scroll-animate">
-                  <div class="view overlay zoom">
-                    <a href="./residential-projects/tdi-lakegrov.html"
-                      ><img
-                        class="lazyload"
-                        data-src="	https://www.tdiinfracorp.com/images/slider/2.jpg"
-                        alt="TDI Lake Grove"
-                        title="TDI Lake Grove"
-                        width="706"
-                        height="385"
-                        src="https://www.tdiinfracorp.com/images/slider/2.jpg"
-                    /></a>
-                  </div>
-                  <section>
-                    <a
-                      href="./residential-projects/tdi-lakegrov.html"
-                      class="prop-name"
-                      >TDI Lake Grove</a
-                    >
-                    <span class="comm-name">Live By The Blue</span>
-                  </section>
-                </div>
+      <div class="jumbotron latest-launches pb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 latest-launches-left mb-3 mb-md-0">
+              <span class="section-tagline">PROPERTIES</span>
+              <h1>Latest Projects</h1>
+              <p>
+                Our properties each have their own unique design aesthetic,
+                providing an aspirational lifestyle within a thriving community,
+                supported by Tdi's community management team.
+              </p>
+              <div class="d-none d-lg-block">
+                <a href="./projects.html" class="btn btn-red d-block w-75"
+                  >View All Properties</a
+                >
               </div>
-              <div class="col-12 col-md-6">
-                <div class="prop-block scroll-animate">
-                  <div class="view overlay zoom">
-                    <a href="./residential-projects/the-retreat.html">
-                      <img
-                        class="lazyload"
-                        data-src="	http://www.tdiinfracorp.com/images/featured/3.jpg"
-                        alt="he Grand Retreat"
-                        title="he Grand Retreat"
-                        width="706"
-                        height="385"
-                        src="https://www.tdiinfracorp.com/images/slider/3.jpg"
-                      />
-                    </a>
+            </div>
+            <div class="col-12 col-lg-8">
+              <div class="row latest-launch">
+                <div class="col-12 col-md-6">
+                  <div class="prop-block scroll-animate">
+                    <div class="view overlay zoom">
+                      <a href="./residential-projects/the-grand-retreat.html"
+                        ><img
+                          class="d-none d-md-block lazyload"
+                          data-src="https://www.tdiinfracorp.com/images/slider/1.jpg"
+                          alt="The Grand Retreat"
+                          title="The Grand Retreat"
+                          width="440"
+                          height="570"
+                          src="https://www.tdiinfracorp.com/images/slider/1.jpg" />
+                        <img
+                          class="d-block d-md-none lazyload"
+                          data-src="https://www.tdiinfracorp.com/images/slider/1.jpg"
+                          alt="The Grand Retreat"
+                          title="The Grand Retreat"
+                          width="706"
+                          height="385"
+                          src="https://www.tdiinfracorp.com/images/slider/1.jpg"
+                      /></a>
+                    </div>
+                    <section>
+                      <a
+                        href="./residential-projects/the-grand-retreat.html"
+                        class="prop-name"
+                        >The Grand Retreat</a
+                      >
+                      <span class="comm-name">The Valley</span>
+                    </section>
                   </div>
-                  <section>
-                    <a
-                      href="./residential-projects/the-retreat.html"
-                      class="prop-name"
-                      >The Retreat</a
-                    >
-                  </section>
+                  <div class="prop-block scroll-animate">
+                    <div class="view overlay zoom">
+                      <a href="./residential-projects/tdi-lakegrov.html"
+                        ><img
+                          class="lazyload"
+                          data-src="	https://www.tdiinfracorp.com/images/slider/2.jpg"
+                          alt="TDI Lake Grove"
+                          title="TDI Lake Grove"
+                          width="706"
+                          height="385"
+                          src="https://www.tdiinfracorp.com/images/slider/2.jpg"
+                      /></a>
+                    </div>
+                    <section>
+                      <a
+                        href="./residential-projects/tdi-lakegrov.html"
+                        class="prop-name"
+                        >TDI Lake Grove</a
+                      >
+                      <span class="comm-name">Live By The Blue</span>
+                    </section>
+                  </div>
                 </div>
-                <div class="prop-block scroll-animate">
-                  <div class="view overlay zoom">
-                    <a href="./residential-projects/tdi-city-panipat.html">
-                      <img
-                        class="lazyload"
-                        data-src="	https://www.tdiinfracorp.com/images/slider/4.jpg"
-                        alt="TDI City, Panipat"
-                        title="TDI City, Panipat"
-                        width="706"
-                        height="385"
-                        src="https://www.tdiinfracorp.com/images/slider/4.jpg"
-                      />
-                    </a>
+                <div class="col-12 col-md-6">
+                  <div class="prop-block scroll-animate">
+                    <div class="view overlay zoom">
+                      <a href="./residential-projects/the-retreat.html">
+                        <img
+                          class="lazyload"
+                          data-src="	http://www.tdiinfracorp.com/images/featured/3.jpg"
+                          alt="he Grand Retreat"
+                          title="he Grand Retreat"
+                          width="706"
+                          height="385"
+                          src="https://www.tdiinfracorp.com/images/slider/3.jpg"
+                        />
+                      </a>
+                    </div>
+                    <section>
+                      <a
+                        href="./residential-projects/the-retreat.html"
+                        class="prop-name"
+                        >The Retreat</a
+                      >
+                    </section>
                   </div>
-                  <section>
-                    <a
-                      href="./residential-projects/tdi-city-panipat.html"
-                      class="prop-name"
-                      >TDI City, Panipat</a
-                    >
-                  </section>
+                  <div class="prop-block scroll-animate">
+                    <div class="view overlay zoom">
+                      <a href="./residential-projects/tdi-city-panipat.html">
+                        <img
+                          class="lazyload"
+                          data-src="	https://www.tdiinfracorp.com/images/slider/4.jpg"
+                          alt="TDI City, Panipat"
+                          title="TDI City, Panipat"
+                          width="706"
+                          height="385"
+                          src="https://www.tdiinfracorp.com/images/slider/4.jpg"
+                        />
+                      </a>
+                    </div>
+                    <section>
+                      <a
+                        href="./residential-projects/tdi-city-panipat.html"
+                        class="prop-name"
+                        >TDI City, Panipat</a
+                      >
+                    </section>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 d-block d-lg-none mt-3">
-          <a
-            href="./projects.html"
-            class="btn btn-red d-block view-destination-mobile"
-            >View All Properties</a
-          >
+          <div class="col-12 d-block d-lg-none mt-3">
+            <a
+              href="./projects.html"
+              class="btn btn-red d-block view-destination-mobile"
+              >View All Properties</a
+            >
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="projectssectionwrap padd100">
-      <div class="projects-container">
-        <div class="projects-row">
-          <div class="col-lg-12">
-            <span
-              class="captext fcolorlgt wow animate__ animate__fadeInUp"
-              style="visibility: visible; animation-name: fadeInUp"
-              >Our Projects</span
-            >
-            <h3
-              class="headingtag fcolordrk mb-4 wow animate__ animate__fadeInUp"
-              style="visibility: visible; animation-name: fadeInUp"
-            >
-              An address that delivers excellence
-            </h3>
-          </div>
-          <div class="col-lg-10">
-            <p
-              class="clrblk wow animate__ animate__fadeInUp"
-              style="visibility: visible; animation-name: fadeInUp"
-            >
-              TDIInfraCorp projects are renowned for ideal locations, impeccable
-              quality of construction, desirable amenities and reasonable
-              prices. Their unique nature in terms of planning, design,
-              workmanship and service makes them most coveted.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="productimg">
+      <div class="projectssectionwrap padd100">
         <div class="projects-container">
           <div class="projects-row">
-            <div class="col-lg-6 col-md-6">
-              <a href="./residential-projects.html">
-                <div class="progrid fmt">
-                  <img
-                    src="http://www.tdiinfracorp.com/images/featured/1.jpg"
-                    class="lazy"
-                    alt="TDIInfracorp Residential"
-                    title="TDIInfraCorp Residential"
-                  />
-                  <div class="sliderupertwxt">
-                    <div class="texttag bon_vivant">Residential</div>
-                  </div>
-                  <div class="plusicon">
-                    <div class="hoverbd">
-                      <img
-                        src="https://www.signatureglobal.in/images/icon/Plus.svg"
-                        alt="Plus Icon"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </a>
+            <div class="col-lg-12">
+              <span
+                class="captext fcolorlgt wow animate__ animate__fadeInUp"
+                style="visibility: visible; animation-name: fadeInUp"
+                >Our Projects</span
+              >
+              <h3
+                class="headingtag fcolordrk mb-4 wow animate__ animate__fadeInUp"
+                style="visibility: visible; animation-name: fadeInUp"
+              >
+                An address that delivers excellence
+              </h3>
             </div>
-            <div class="col-lg-6 col-md-6">
-              <a href="./commercial-projects.html">
-                <div class="progrid">
-                  <img
-                    src="https://www.tdiinfracorp.com/images/featured/5.jpg"
-                    class="lazy"
-                    alt="TDIInfraCorp Commercial"
-                    title="TDIInfraCorp Commercial"
-                  />
-                  <div class="sliderupertwxt">
-                    <div class="texttag bon_vivant">Commercial</div>
-                  </div>
-                  <div class="plusicon">
-                    <div class="hoverbd">
-                      <img
-                        src="https://www.signatureglobal.in/images/icon/Plus.svg"
-                        alt="Plus Icon"
-                      />
+            <div class="col-lg-10">
+              <p
+                class="clrblk wow animate__ animate__fadeInUp"
+                style="visibility: visible; animation-name: fadeInUp"
+              >
+                TDIInfraCorp projects are renowned for ideal locations,
+                impeccable quality of construction, desirable amenities and
+                reasonable prices. Their unique nature in terms of planning,
+                design, workmanship and service makes them most coveted.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="productimg">
+          <div class="projects-container">
+            <div class="projects-row">
+              <div class="col-lg-6 col-md-6">
+                <a href="./residential-projects.html">
+                  <div class="progrid fmt">
+                    <img
+                      src="http://www.tdiinfracorp.com/images/featured/1.jpg"
+                      class="lazy"
+                      alt="TDIInfracorp Residential"
+                      title="TDIInfraCorp Residential"
+                    />
+                    <div class="sliderupertwxt">
+                      <div class="texttag bon_vivant">Residential</div>
+                    </div>
+                    <div class="plusicon">
+                      <div class="hoverbd">
+                        <img
+                          src="https://www.signatureglobal.in/images/icon/Plus.svg"
+                          alt="Plus Icon"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <a href="./commercial-projects.html">
+                  <div class="progrid">
+                    <img
+                      src="https://www.tdiinfracorp.com/images/featured/5.jpg"
+                      class="lazy"
+                      alt="TDIInfraCorp Commercial"
+                      title="TDIInfraCorp Commercial"
+                    />
+                    <div class="sliderupertwxt">
+                      <div class="texttag bon_vivant">Commercial</div>
+                    </div>
+                    <div class="plusicon">
+                      <div class="hoverbd">
+                        <img
+                          src="https://www.signatureglobal.in/images/icon/Plus.svg"
+                          alt="Plus Icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="jumbotron pt-0 home-digital-experience">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-10 offset-md-1">
-            <div class="row">
-              <div class="container section-awards">
-                <div class="row">
-                  <div class="col-12 text-center content-inner">
-                    <div>
-                      <h2>OUR AWARDS</h2>
-                      <p>
-                        TDI has been doing exception work since years and
-                        received various awards and honors
-                      </p>
-                      <div class="row" style="justify-content: space-between">
-                        <div class="col-12 col-md-3 featured-awards-container">
-                          <div class="view overlay zoom">
-                            <img
-                              src="http://www.tdiinfracorp.com/manage/uploads/awards/1-small.jpg"
-                              alt="Address Beach Resort Dubai"
-                              title="Address Beach Resort Dubai"
-                              width="320"
-                              height="415"
-                              class="w-100"
-                            />
-                          </div>
-                          <h5 class="mt-4 mb-2">
-                            Address Beach Resort - World’s tallest infinity pool
-                          </h5>
-                          <span class="community-tagline mb-0"
-                            >Guiness World Records™</span
+      <div class="jumbotron pt-0 home-digital-experience">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 offset-md-1">
+              <div class="row">
+                <div class="container section-awards">
+                  <div class="row">
+                    <div class="col-12 text-center content-inner">
+                      <div>
+                        <h2>OUR AWARDS</h2>
+                        <p>
+                          TDI has been doing exception work since years and
+                          received various awards and honors
+                        </p>
+                        <div class="row" style="justify-content: space-between">
+                          <div
+                            class="col-12 col-md-3 featured-awards-container"
                           >
-                          <span class="community-tagline">2021</span>
-                        </div>
-                        <div class="col-12 col-md-3 featured-awards-container">
-                          <div class="view overlay zoom">
-                            <img
-                              src="http://www.tdiinfracorp.com/manage/uploads/awards/2-small.jpg"
-                              alt="The Dubai Mall"
-                              title="The Dubai Mall"
-                              width="320"
-                              height="415"
-                              class="w-100"
-                            />
+                            <div class="view overlay zoom">
+                              <img
+                                src="http://www.tdiinfracorp.com/manage/uploads/awards/1-small.jpg"
+                                alt="Address Beach Resort Dubai"
+                                title="Address Beach Resort Dubai"
+                                width="320"
+                                height="415"
+                                class="w-100"
+                              />
+                            </div>
+                            <h5 class="mt-4 mb-2">
+                              Address Beach Resort - World’s tallest infinity
+                              pool
+                            </h5>
+                            <span class="community-tagline mb-0"
+                              >Guiness World Records™</span
+                            >
+                            <span class="community-tagline">2021</span>
                           </div>
-                          <h5 class="mt-4 mb-2">Best Customer Experience</h5>
-                          <span class="community-tagline mb-0"
-                            >World Retail Awards</span
+                          <div
+                            class="col-12 col-md-3 featured-awards-container"
                           >
-                          <span class="community-tagline">2019</span>
-                        </div>
-                        <div class="col-12 col-md-3 featured-awards-container">
-                          <div class="view overlay zoom">
-                            <img
-                              src="http://www.tdiinfracorp.com/manage/uploads/awards/3-small.jpg"
-                              alt="Address Downtown - World Leading Luxury City Hotel"
-                              title="Address Downtown - World Leading Luxury City Hotel"
-                              width="320"
-                              height="415"
-                              class="w-100"
-                            />
+                            <div class="view overlay zoom">
+                              <img
+                                src="http://www.tdiinfracorp.com/manage/uploads/awards/2-small.jpg"
+                                alt="The Dubai Mall"
+                                title="The Dubai Mall"
+                                width="320"
+                                height="415"
+                                class="w-100"
+                              />
+                            </div>
+                            <h5 class="mt-4 mb-2">Best Customer Experience</h5>
+                            <span class="community-tagline mb-0"
+                              >World Retail Awards</span
+                            >
+                            <span class="community-tagline">2019</span>
                           </div>
-                          <h5 class="mt-4 mb-2">
-                            Address Downtown - World Leading Luxury City Hotel
-                          </h5>
-                          <span class="community-tagline mb-0"
-                            >World Travel Awards™</span
+                          <div
+                            class="col-12 col-md-3 featured-awards-container"
                           >
-                          <span class="community-tagline">2019</span>
-                        </div>
-                        <!-- <div class="col-12 col-md-3 featured-awards-container">
+                            <div class="view overlay zoom">
+                              <img
+                                src="http://www.tdiinfracorp.com/manage/uploads/awards/3-small.jpg"
+                                alt="Address Downtown - World Leading Luxury City Hotel"
+                                title="Address Downtown - World Leading Luxury City Hotel"
+                                width="320"
+                                height="415"
+                                class="w-100"
+                              />
+                            </div>
+                            <h5 class="mt-4 mb-2">
+                              Address Downtown - World Leading Luxury City Hotel
+                            </h5>
+                            <span class="community-tagline mb-0"
+                              >World Travel Awards™</span
+                            >
+                            <span class="community-tagline">2019</span>
+                          </div>
+                          <!-- <div class="col-12 col-md-3 featured-awards-container">
                           <div class="view overlay zoom">
                             <img
                               src="https://cdn.properties.emaar.com/wp-content/uploads/2020/06/Screen-Shot-2020-06-21-at-2.38.58-PM-320x415.png"
@@ -629,8 +1012,8 @@
                           >
                           <span class="community-tagline">2017</span>
                         </div> -->
-                      </div>
-                      <!-- <div class="row">
+                        </div>
+                        <!-- <div class="row">
                         <div class="col-12 mt-5">
                           <a
                             class="btn btn-grey view-awards"
@@ -640,6 +1023,7 @@
                           >
                         </div>
                       </div> -->
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -648,111 +1032,112 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="jumbotron latest-launches pb-0">
-      <div class="container">
-        <div
-          class="scontainer section-other-business communities-menu-featured"
-        >
-          <span class="section-tagline">MORE</span>
-          <h2>Neighbourhood brands</h2>
-          <div class="row neighbourbrand_style">
-            <div>
-              <img
-                src="http://www.tdiinfracorp.com/images/clients/pantaloons.png"
-                alt="Pantaloons"
-                title="Pantaloons"
-              />
-            </div>
-            <div>
-              <img
-                src="http://www.tdiinfracorp.com/images/clients/lifestyle.png"
-                alt="Pantaloons"
-                title="Pantaloons"
-              />
-            </div>
-            <div>
-              <img
-                src="http://www.tdiinfracorp.com/images/clients/westside.png"
-                alt="Pantaloons"
-                title="Pantaloons"
-              />
-            </div>
-            <div>
-              <img
-                src="http://www.tdiinfracorp.com/images/clients/bigbazaar.png"
-                alt="Pantaloons"
-                title="Pantaloons"
-              />
-            </div>
-            <div>
-              <img
-                src="http://www.tdiinfracorp.com/images/clients/levis.png"
-                alt="Pantaloons"
-                title="Pantaloons"
-              />
-            </div>
-            <div>
-              <img
-                src="http://www.tdiinfracorp.com/images/clients/bata.png"
-                alt="Pantaloons"
-                title="Pantaloons"
-              />
+      <div class="jumbotron latest-launches pb-0">
+        <div class="container">
+          <div
+            class="scontainer section-other-business communities-menu-featured"
+          >
+            <span class="section-tagline">MORE</span>
+            <h2>Neighbourhood brands</h2>
+            <div class="row neighbourbrand_style">
+              <div>
+                <img
+                  src="http://www.tdiinfracorp.com/images/clients/pantaloons.png"
+                  alt="Pantaloons"
+                  title="Pantaloons"
+                />
+              </div>
+              <div>
+                <img
+                  src="http://www.tdiinfracorp.com/images/clients/lifestyle.png"
+                  alt="Pantaloons"
+                  title="Pantaloons"
+                />
+              </div>
+              <div>
+                <img
+                  src="http://www.tdiinfracorp.com/images/clients/westside.png"
+                  alt="Pantaloons"
+                  title="Pantaloons"
+                />
+              </div>
+              <div>
+                <img
+                  src="http://www.tdiinfracorp.com/images/clients/bigbazaar.png"
+                  alt="Pantaloons"
+                  title="Pantaloons"
+                />
+              </div>
+              <div>
+                <img
+                  src="http://www.tdiinfracorp.com/images/clients/levis.png"
+                  alt="Pantaloons"
+                  title="Pantaloons"
+                />
+              </div>
+              <div>
+                <img
+                  src="http://www.tdiinfracorp.com/images/clients/bata.png"
+                  alt="Pantaloons"
+                  title="Pantaloons"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer
-      id="colophon"
-      class="site-footer navbar-light text-md-left"
-      role="contentinfo"
-    >
-      <div class="container p-4">
-        <div
-          class="row text-md-start mt-5 align-text"
-          style="
-            justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
-          "
-        >
-          <!--Logo Start-->
-          <div class="col-md-4">
-            <img
-              src="http://www.tdiinfracorp.com/manage/uploads/logo.png"
-              alt="Emaar Properties PJSC"
-              title="Emaar Properties PJSC"
-              width="100"
-              height="25"
-              class="mb-3"
-            />
+      <footer
+        id="colophon"
+        class="site-footer navbar-light text-md-left"
+        role="contentinfo"
+      >
+        <div class="container p-4">
+          <div
+            class="row text-md-start mt-5 align-text"
+            style="
+              justify-content: space-between;
+              padding-left: 20px;
+              padding-right: 20px;
+            "
+          >
+            <!--Logo Start-->
+            <div class="col-md-4">
+              <img
+                src="http://www.tdiinfracorp.com/manage/uploads/logo.png"
+                alt="Emaar Properties PJSC"
+                title="Emaar Properties PJSC"
+                width="100"
+                height="25"
+                class="mb-3"
+              />
 
-            <p class="copy-right footer-para-color">
-              Copyright © 2023 TDIInfraCorp. All Rights Reserved.
-            </p>
-          </div>
-          <!--Logo end-->
+              <p class="copy-right footer-para-color">
+                Copyright © 2023 TDIInfraCorp. All Rights Reserved.
+              </p>
+            </div>
+            <!--Logo end-->
 
-          <!--Solutions Start-->
-          <div class="col-md-3">
-            <h3 class="pb-3 widget-title">REGISTERED OFFICE</h3>
-            <ul class="list-style ps-0">
-              <li class="pb-3 mb-3 footer-para-color">
-                TDI Infracorp (India) Ltd. UG Floor, Vandana Building, 11,
-                Tolstoy Marg, Connaught Place, New Delhi - 110001
-              </li>
-              <li class="pb-3 mb-3 footer-para-color">Tel: +91-11-43111111</li>
-              <li class="pb-3 mb-3 footer-para-color">
-                Toll Free No.: 8800123633
-              </li>
-            </ul>
-          </div>
-          <!--Solutions end-->
+            <!--Solutions Start-->
+            <div class="col-md-3">
+              <h3 class="pb-3 widget-title">REGISTERED OFFICE</h3>
+              <ul class="list-style ps-0">
+                <li class="pb-3 mb-3 footer-para-color">
+                  TDI Infracorp (India) Ltd. UG Floor, Vandana Building, 11,
+                  Tolstoy Marg, Connaught Place, New Delhi - 110001
+                </li>
+                <li class="pb-3 mb-3 footer-para-color">
+                  Tel: +91-11-43111111
+                </li>
+                <li class="pb-3 mb-3 footer-para-color">
+                  Toll Free No.: 8800123633
+                </li>
+              </ul>
+            </div>
+            <!--Solutions end-->
 
-          <!--Quick links Start-->
-          <!-- <div class="col-md-3">
+            <!--Quick links Start-->
+            <!-- <div class="col-md-3">
             <h3 class="pb-3 widget-title">CORPORATE OFFICE</h3>
             <ul class="list-style ps-0">
               <li class="pb-3 mb-3 footer-para-color">RPX Empower</li>
@@ -760,46 +1145,46 @@
               <li class="pb-3 footer-para-color">RPX Corporation</li>
             </ul>
           </div> -->
-          <!--QUick links end-->
+            <!--QUick links end-->
 
-          <!--Other Start-->
-          <div class="col-md-2">
-            <h3 class="pb-3 widget-title">FOLLOW US</h3>
-            <div>
-              <ul class="social-media-icons-sections mb-3">
-                <li class="social-media-icon">
-                  <a target="_blank" href="" title=""
-                    ><i class="fab fa-facebook-square" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li class="social-media-icon">
-                  <a target="_blank" href="" title=""
-                    ><i class="fab fa-twitter" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li class="social-media-icon">
-                  <a target="_blank" href="" title=""
-                    ><i class="fab fa-youtube" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li class="social-media-icon">
-                  <a target="_blank" href="" title="Follow us on Instagram"
-                    ><i class="fab fa-instagram" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li class="social-media-icon">
-                  <a target="_blank" href="" title=""
-                    ><i class="fab fa-linkedin" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
+            <!--Other Start-->
+            <div class="col-md-2">
+              <h3 class="pb-3 widget-title">FOLLOW US</h3>
+              <div>
+                <ul class="social-media-icons-sections mb-3">
+                  <li class="social-media-icon">
+                    <a target="_blank" href="" title=""
+                      ><i class="fab fa-facebook-square" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="social-media-icon">
+                    <a target="_blank" href="" title=""
+                      ><i class="fab fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="social-media-icon">
+                    <a target="_blank" href="" title=""
+                      ><i class="fab fa-youtube" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="social-media-icon">
+                    <a target="_blank" href="" title="Follow us on Instagram"
+                      ><i class="fab fa-instagram" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="social-media-icon">
+                    <a target="_blank" href="" title=""
+                      ><i class="fab fa-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!--Other end-->
           </div>
-          <!--Other end-->
         </div>
-      </div>
 
-      <!-- <div class="footer-bottom text-lg-center text-md-center legal-menu-block">
+        <!-- <div class="footer-bottom text-lg-center text-md-center legal-menu-block">
         <div class="container">
           <div class="menu-legal-menu-container">
             <ul id="menu-legal-menu" class="menu">
@@ -823,19 +1208,20 @@
           </div>
         </div>
       </div> -->
-    </footer>
+      </footer>
 
-    <div class="homepage-sticky-search d-lg-none">
-      <div class="row" style="justify-content: center">
-        <div class="pl-2">
-          <a
-            href="./contactus.html"
-            class="btn btn-red get-touch-btn w-100"
-            data-toggle="modal"
-            data-target="#registerModal"
-            data-formname="Get in Touch"
-            >Get in Touch</a
-          >
+      <div class="homepage-sticky-search d-lg-none">
+        <div class="row" style="justify-content: center">
+          <div class="pl-2">
+            <a
+              href="./contactus.html"
+              class="btn btn-red get-touch-btn w-100"
+              data-toggle="modal"
+              data-target="#registerModal"
+              data-formname="Get in Touch"
+              >Get in Touch</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -893,6 +1279,21 @@
           window.scrollY > headerTop + header.offsetHeight
         );
       });
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("navBar").style.display = "none";
+        document.body.style.backgroundColor = "rgba(41, 85, 152, 0.9)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("navBar").style.display = "block";
+        document.body.style.backgroundColor = "white";
+      }
     </script>
   </body>
 </html>

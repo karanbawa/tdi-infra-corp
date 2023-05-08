@@ -516,7 +516,7 @@ a {
   overflow: hidden;
 }
 .halvar_rg {
-  font-family: "Halvar Eng Rg";
+  font-family: "Lato", "Open Sans", sans-serif;
 }
 .projectsbtn strong,
 .subnavdown strong {
@@ -932,8 +932,9 @@ a {
   height: 40px;
   background: 0 0;
   border: 1px solid #6c9392;
+  font-weight: 700;
   border-radius: 50px;
-  font-size: 15px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   transition: 0.5s ease-in;
@@ -944,8 +945,9 @@ a {
   top: -1px;
 }
 .pronavbtn .abtn:hover {
-  background: #203d3b;
+  background: #c3261f;
   color: #fff;
+  font-weight: 700;
 }
 .pronavbtn .abtn:hover svg .cls-1 {
   stroke: #fff !important;

@@ -7,6 +7,10 @@ body {
   color: #232323;
   background-color: #fff;
 }
+.footer-font {
+  font-weight: 400;
+  font-size: 13px;
+}
 .footer-alignment {
   justify-content: space-between;
   padding-left: 20px;

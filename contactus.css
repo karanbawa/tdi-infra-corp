@@ -2137,9 +2137,14 @@
     background-position-x: 98%;
     background-position-y: 12px;
   }
-  .contact_form_container_wrapper form {
-    text-align: center !important;
+  .btn-red {
+    background-color: #c3261f;
+    color: #fff !important;
+    border: 1px solid #071c35;
   }
+  /* .contact_form_container_wrapper form {
+    text-align: center !important;
+  } */
   .contact_form_container_wrapper .gfield_label {
     display: none !important;
   }

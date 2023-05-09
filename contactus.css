@@ -1513,7 +1513,7 @@
     margin-top: 1rem;
     padding: 1rem 1.5rem;
     border: none;
-    background: rgba(173, 216, 230, 0.7);
+    background: #c3261f;
     cursor: pointer;
     transition: background 0.15s;
   }
@@ -1521,7 +1521,7 @@
     margin-right: 0.5rem;
   }
   .submit:hover {
-    background: rgba(173, 216, 230, 1);
+    background: #c3261f;
   }
   .form-group input[type="text"]:focus,
   .form-group input[type="email"]:focus,
